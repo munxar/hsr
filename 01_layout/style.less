@@ -1,0 +1,74 @@
+// define component widths
+@header-height: 75px;
+@leftnav-width: 100px;
+@rightnav-width: 100px;
+@footer-height: 75px;
+
+// define colors
+@color-header: #FDFF00;
+@color-footer: @color-header;
+@color-content: #0FC93A;
+@color-left: #00DFE0;
+@color-right: #008B8B;
+
+// set defaults on body
+body {
+    margin: 0;
+    padding: 0;
+    font: 24px Helvetica;
+}
+
+// mixin helpers for fixed positioning
+.fixed {
+    position: fixed;
+    overflow: auto;
+}
+
+// fix to left and right side
+.fix-left-right {
+    .fixed;
+    left: 0;
+    right: 0;
+}
+
+// fix to top and bottom (minus header, footer height)
+.fix-top-bottom {
+    .fixed;
+    top: @header-height;
+    bottom: @footer-height;
+}
+
+header {
+    .fix-left-right;
+    background-color: @color-header;
+    top: 0;
+    height: @header-height;
+}
+
+main {
+    .fix-top-bottom;
+    background-color: @color-content;
+    left: @leftnav-width;
+    right: @rightnav-width;
+}
+
+nav {
+    .fix-top-bottom;
+    background-color: @color-left;
+    left: 0;
+    width: @leftnav-width;
+}
+
+aside {
+    .fix-top-bottom;
+    background-color: @color-right;
+    width: @rightnav-width;
+    right: 0;
+}
+
+footer {
+    .fix-left-right;
+    background-color: @color-footer;
+    bottom: 0;
+    height: @footer-height;
+}

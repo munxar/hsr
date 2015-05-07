@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 24px Helvetica;
+}
+.fixed {
+  position: fixed;
+  overflow: auto;
+}
+.fix-left-right {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+}
+.fix-top-bottom {
+  position: fixed;
+  overflow: auto;
+  top: 75px;
+  bottom: 75px;
+}
+header {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  background-color: #fdff00;
+  top: 0;
+  height: 75px;
+}
+main {
+  position: fixed;
+  overflow: auto;
+  top: 75px;
+  bottom: 75px;
+  background-color: #0fc93a;
+  left: 100px;
+  right: 100px;
+}
+nav {
+  position: fixed;
+  overflow: auto;
+  top: 75px;
+  bottom: 75px;
+  background-color: #00dfe0;
+  left: 0;
+  width: 100px;
+}
+aside {
+  position: fixed;
+  overflow: auto;
+  top: 75px;
+  bottom: 75px;
+  background-color: #008b8b;
+  width: 100px;
+  right: 0;
+}
+footer {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  background-color: #fdff00;
+  bottom: 0;
+  height: 75px;
+}
