@@ -1,0 +1,114 @@
+h2 {
+	padding-top:0px;
+	padding-bottom: 5px;
+}
+
+DIV#blueBox h2 {
+	margin-top: 5px;
+}
+
+#colRight DIV.csc-header {
+	margin-bottom: 5px;
+}
+
+#colRight h2 {
+	/*padding-top:0px;
+	padding-bottom: 15px;*/
+	padding: 5px 0 5px 5px;
+	background-color: #DDDDDE; 
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+
+.tablepadding.right {
+	text-align: right;
+}
+
+
+/* CSS Document */
+
+
+
+
+/**  table liste crm       **/
+.tableBgTitle{
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image:  url(/fileadmin/templates/hsr/html/img/dotline.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	width:100%;
+	height:1px;
+	padding-top:1px;
+}
+.tablepadding{
+	padding: 2px 0px 2px 4px; 
+	margin:0px; 
+	border: none;
+}
+
+.tablepadding.right {
+	text-align: right;
+}
+
+.rowUpDown{
+	background-repeat:no-repeat;
+	background-position:right 0px;
+	padding: 0;
+	margin:0px 6px 0px 0px;
+}
+
+
+/* ie6 hack */
+* html .rowUpDown{
+	width:100%;
+	height:100%;
+
+}	
+.rowUpDownHover{
+	background-repeat:no-repeat;
+	background-position:right 0px;
+	padding: 0;
+	margin:0px 6px 0px 0px;
+}
+
+.tableBgNo{
+	background-color: #FFFFFF;
+	background-image:  url(/fileadmin/templates/hsr/html/img/dotline.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	width:100%;
+	height:1px;
+}
+.tableBgNoCh{
+	background-image:  url(/fileadmin/templates/hsr/html/img/dotline.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	width:100%;
+	height:1px;
+}
+.tableBgNoOv{
+	background-image:  url(/fileadmin/templates/hsr/html/img/dotline.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	width:100%;
+	height:1px;
+}
+
+ td div.rowUpDownHover{
+	background:url(/fileadmin/templates/hsr/html/img/upDownHover.png) no-repeat right top;
+}
+
+* html td div.rowUpDownHover {background:url(/fileadmin/templates/hsr/html/img/upDownHover.gif) no-repeat right top;}
+
+ td div.rowUpDown{
+	background:url(/fileadmin/templates/hsr/html/img/upDown.png) no-repeat right top;
+}
+
+/** html .rowUpDown {
+	background:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/fileadmin/templates/hsr/html/img/upDown.png');
+}*/
+
+* html td div.rowUpDown {background:url(/fileadmin/templates/hsr/html/img/upDown.gif) no-repeat right top;}

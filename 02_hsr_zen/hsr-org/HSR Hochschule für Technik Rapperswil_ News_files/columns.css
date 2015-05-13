@@ -1,0 +1,181 @@
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		XXX
+	date:			Monat/2008, Autor
+	Version:		4.1
+	file:			colums.css
+	function:		different content colums-styles inside /templates/sub/
+********************************************************************************************************/
+#colHeader{
+	border-top:1px solid #000000; 
+	padding:15px 0px 0px 37px;
+}
+	
+/* 1-spalte */
+#colLeft {
+	/*border-top:1px solid #000000;*/
+	float:left;
+	margin:0px;
+	/*padding:15px 0px 0px 30px;*/
+	padding:0px 0px 0px 37px;
+	width: 688px;
+	/*background-color: #FFFFFF;*/
+}
+
+* html #colLeft{margin:0px; padding:0px 0px 0px 37px;}
+
+/* 2-spalten */
+#col_2 #colLeft {
+	/*border-top:1px solid #000000;*/
+	margin:0px;
+	/*padding:15px 0px 0px 30px;*/
+	padding:0px 0px 0px 37px;
+	width: 534px;
+	float:left;
+	/*overflow: hidden;*/
+}
+
+#col_2 #colHeader {
+	width: 534px;
+}
+
+
+
+/* 3-spalten */
+#col_3 #colLeft {
+/*border-top:1px solid #000000;*/
+	margin:0px;
+	/*padding:15px 0px 0px 30px;*/
+	padding:0px 0px 0px 37px;
+	width: 380px;
+	float:left;
+}
+
+#col_3 #colHeader {
+	width: 380px;
+}
+
+
+/** html #col_3 #colNormal {
+	margin:15px 0px 0px 15px;
+}*/
+
+
+/* 4-spalten */
+#col_4 #colLeft {
+/*border-top:1px solid #000000;*/
+/*background:blue;*/
+	margin:0px;
+	/*padding:15px 10px 0px 30px;*/
+	padding:0px 10px 0px 37px;
+	width: 226px;
+	float:left;
+	
+}
+
+#col_4 #colNormal{
+/*border-top:1px solid #000000;*/
+/*background:red;*/
+	margin:0px;
+	/*padding:15px 0px 0px 0px;*/
+	padding:0px 0px 0px 0px;
+	width: 144px;
+	float:left;
+	
+}
+
+
+#col_4 #colHeader {
+	width: 380px;
+}
+
+
+/** html #col_3 #colNormal {
+	margin:15px 0px 0px 15px;
+}*/
+
+/*#colRight {
+	border-top:1px solid #000000;
+	background:none;
+	float:left;
+	margin:0px;
+	width:144px;
+	padding:15px 0px 0px 10px;
+}*/
+
+#colRight {
+	font-size:10px;
+	left:631px;
+	line-height:13px;
+	position:absolute;
+	top:213px;
+	width:144px;
+	z-index:2;
+	border-top:1px solid #000000;
+	background:none;
+	margin:0px;
+	padding:15px 0px 0px 10px;
+}
+
+/*#colRight .actContainer {
+	background-color:#E7E8E8;
+	color: #000000;
+}*/
+
+
+/*----- HOME -----*/
+body#HomeBody #colLeft div.actTitle, body#HomeBody #colLeft div.actTitleblock, body#HomeBody #colLeft div.actContent, body#HomeBody #colLeft div.actContentActive, body#HomeBody #colLeft div.actOpen{
+	width:194px;
+}
+body#HomeBody #colLeft div.actTitleText{ width: 172px;}
+/*2 Spalter*/
+body#HomeBody #colLeft, body#HomeBody #colHeader{ 
+background:#f8f8f8;
+width:194px;
+padding:0;}
+
+body#HomeBody #colHeader{
+display:none;}
+
+/*Reserve*/
+
+/*#colLeft {
+	float:left;
+	padding:10px;
+	width: 230px;
+	background-color: #CCCCCC;
+}*/
+
+/*========================================================================
+	People-Box	=	colBorder
+========================================================================*/
+
+div#peopleBox {
+	position:absolute;
+	
+	top:135px; 
+	left:795px;	
+	width:144px;
+	/*padding:5px 0px;*/
+	z-index:2;	
+	font-size:10px;
+	line-height:12px;
+}
+
+
+div#peopleBox div.contentElement{ 
+	margin-bottom:10px; 
+}
+
+* html div#peopleBox div.contentElement{ 
+	margin-bottom:0px;
+	border-bottom:10px solid white;
+}
+
+*+html div#peopleBox div.contentElement{ 
+	margin-bottom:0px;
+	border-bottom:10px solid white;
+}
+
+
+

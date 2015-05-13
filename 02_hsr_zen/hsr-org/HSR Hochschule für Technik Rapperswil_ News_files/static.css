@@ -1,0 +1,288 @@
+
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		HSR Redesign
+	date:			10/2008, claudia
+	version:		4.1
+	file:			static.css
+	function:		base Stylesheet Do not change anything!
+********************************************************************************************************/
+
+/* ######################################################################################################
+** ### Vorbereitende Manahmen | Reset ##################################################################
+** ######################################################################################################
+*/
+	/* Hiermit werden die Randabstaende und Rahmen aller HTML-Elemente auf Null gesetzt. Damit wird das       
+	** Aussehen der Webseite in unterschiedlichen Browsern vereinheitlicht. 
+	*/
+/* Alle Elemente auf null setzen */	
+* { 
+	margin:0; 
+	padding: 0; 
+	background-repeat: no-repeat;
+} 
+
+* :focus{
+	outline:none;
+}
+
+/* Das zuruecksetzen der Innen- und Aussenabstaende verursacht zu kleine Selectboxen. Dies wird korrigiert */
+option {
+	padding: 0px 0.4em;
+}
+
+/** Die nachfolgenden Angaben entstammen dem Artikel 'Useful Code Snippets' von Mike Foskett
+** [http://www.websemantics.co.uk/tutorials/useful_css_snippets/]*/
+	
+	/* Vertikalen Scrollbalken im Netscape & Firefox erzwingen. Dies verhindert, dass zentrierte Layouts 
+	** um 10 Pixel springen wenn der Seiteninhalt kleiner wird als die Hhe des Browserfensters. */
+html { 
+	height: 100%;		
+	margin-bottom:1px;
+}
+ 
+body { 
+	min-height: 100.01%;	
+/* Beseitigung des Rundungsfehlers bei Schriftgroessen im Opera sowie Standardformatierungen */
+	font-size: 100.01%; 
+/* FIX: Verhindert, dass positionierte Elemente nicht verschoben werden wen die Groesse des Browser 
+Fensters geaendert wird. */
+/*position: relative; /*abklaeren!!!!*/
+	
+/* Vorgabe der Standardfarben und Textausrichtung*/     
+	color: #000;        
+	background: #fff;
+	text-align: left; 
+}
+	
+body#HomeBody{
+	min-height: 100.01%;	
+/* Beseitigung des Rundungsfehlers bei Schriftgren im Opera sowie Standardformatierungen */
+	font-size: 100.01%; 
+/* FIX: Verhindert, dass positionierte Elemente nicht verschoben werden when die Gre des Browser 
+Fensters gendert wird. */
+/* Vorgabe der Standardfarben und Textausrichtung*/     
+	color: #000;        
+	background: #fff;
+	text-align: left;
+} 
+
+html body#HomeBody{
+	min-height: 100%;	
+	height: 100%;		
+	margin-bottom:0px;
+	overflow: hidden;
+} 
+	
+/* Standardrahmen zurcksetzen */
+fieldset, img {
+	border:0;
+}
+	
+/* Anpassung fuer Safari Browser. font-size:100% ist fuer den Safari in Formularen zu gross */ 
+div.tx_mailform_div_input select,div.tx_mailform_div_input input,div.tx_mailform_div_input textarea {
+	/*font-size: 99%;*/
+	font-size:11px;
+	width: 320px;
+	margin: 0 0 5px 0;
+	border: 1px solid #999999;
+}
+
+div.tx_mailform_div_input input.search_sa_file {
+	border: none;
+}
+
+/*--- ICS Wohnungsbörse ---*/
+div.tx-icswohnungsboerse-pi1 select, div.tx-icswohnungsboerse-pi1 input, div.tx-icswohnungsboerse-pi1 textarea {
+	font-size:11px;
+	width: 280px;
+	margin: 0 0 5px 0;
+	border: 1px solid #99C1DA;
+	border-radius: 3px;
+	padding: 2px;
+	font-family: arial, sans-serif;
+	color: #444444;
+}
+
+div.tx-icswohnungsboerse-pi1 input[type=radio], div.tx-icswohnungsboerse-pi1 input[type=checkbox] {
+	width: 25px;
+}
+
+div.tx-icswohnungsboerse-pi1 img.tx-srfreecap-pi2-image{
+	margin: 0 10px 5px 0;
+}
+
+div.tx-icswohnungsboerse-pi1 .tx-srfreecap-pi2-cant-read {
+	margin: 0 0 15px 140px;
+	font-size: 11px;
+}
+
+div.tx-icswohnungsboerse-pi1 label a {
+	margin: 0 10 0 0;
+	float: left;
+}
+
+div.tx-icswohnungsboerse-pi1 input[type=radio]{
+	float:left;
+}
+
+div.tx-icswohnungsboerse-pi1 #acquisition_by_date {
+	float:left;
+	height:25px;
+	margin: 0 0 15px 0;
+}
+
+div.tx-icswohnungsboerse-pi1 #acquisition_by_date input {
+	height:17px;
+}
+
+	
+/* Clearfix-Methode zum Clearen der Float-Umgebungen */
+.clear {
+	clear: both;
+	height: 0;
+	margin-top: 0 !important;
+	margin-top: -2px;
+}
+	
+/* Diese Angabe benoetigt der Safari-Browser zwingend !! */
+.clearfix {
+	display: block;
+} 
+
+.hidden {
+	display: none;
+	position: absolute;
+	left: -9999px;
+}
+
+.blind {
+	display:inline;
+	height:0pt;
+	left:-1000px;
+	overflow:hidden;
+	position:absolute;
+	top:-1000px;
+	width:0pt;
+}
+	
+/* Overflow-Methode zum Clearen der Float-Umgebungen */
+.floatbox {
+	overflow:hidden;
+}
+	
+/* IE-Clearing: Bentigt nur der Internet Explorer und ber iehacks.css zugeschaltet */
+#ie_clearing {
+	display: none;
+}
+	
+blockquote, cite {
+	margin: 0 0 1em 1.5em;
+	font-size: 0.93em;
+	width: auto;
+}
+
+th {
+	text-align: left;
+	vertical-align: top;
+}
+
+tbody {
+    font-size: 11px;
+}
+
+thead {
+	
+}
+
+thead th b {
+	font-weight: bold;
+}
+
+thead tr {
+	border-bottom: 1px solid #A4A2A4;
+	height: 24px;
+}
+
+td {
+	vertical-align: top;
+}
+
+.clearBoth{
+	clear:both;
+}
+
+* html div.tx-indexedsearch-browsebox ul.browsebox{
+	/*background:#CCCCCC;*/
+}
+
+div.divider hr {
+	border: 0px;
+	width: 99%;
+	color: #DDDDDE;
+	background-color: #DDDDDE;
+	height: 1px;
+}
+
+
+/* Stellenbörse */
+DIV.tx-icsstellenboerse-pi2 span {
+	margin-right: 5px;
+}
+
+/* Formatierung Rahmen um Bild */
+DIV.csc-textpic-border DIV.csc-textpic-imagewrap .csc-textpic-image IMG {
+    border: 1px solid #999999;
+    padding: 0;
+}
+
+/*----------------------------------------*/
+/*** Formatierungen für die Nebis Suche ***/
+div#mainContent div.rowElem {
+	margin: 5px 0;
+}
+
+div#mainContent div.rowElem input, select, textarea {
+	border: 1px solid #999999;
+	/*margin: 0 5px;*/
+	padding: 3px;
+}
+
+div#mainContent div.rowElem #goButton {
+	background-color: #0065A3;
+	color: #FFFFFF;
+}
+
+div#mainContent div.rowElem #goButton:hover {
+	background-color: #FFFFFF;
+	color: #0065A3;
+}
+
+div#mainContent #searchForm input {
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #999999;
+	margin: 0 5px 5px  0;
+	padding: 3px;
+}
+
+div#mainContent #searchForm #goButton {
+	background-color: #0065A3;
+	color: #FFFFFF;
+	border: 0 solid;
+}
+
+div#mainContent #searchForm #goButton:hover {
+	background-color: #DDDDDE;
+	color: #0065A3;
+}
+/*----------------------------------------*/
+
+iframe {
+	border: 0px none;
+}
+
+/*-----------------------------------------*/
+/*** Formatierungen für den Movie Player ***/
+.tx-flvplayer-pi1 embed {
+	/*border: 1px solid #0065A3;*/
+}

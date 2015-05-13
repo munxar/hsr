@@ -1,0 +1,389 @@
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		HSR Redesign
+	date:			10/2008, claudia
+	version:		4.1
+	file:			navigation.css
+	function:		navigation-style  
+********************************************************************************************************/
+
+/*--------------------------------
+ csc Sitemap  
+--------------------------------*/
+/*   nummerierung und punkt verstecken  */
+li dfn, .usb {
+	display:none;
+}
+
+/*========================================================================
+	LANGUAGE
+========================================================================*/
+
+div#language ul {
+	margin:0px;
+	padding:7px 0px 0px 16px;	
+	list-style:none;
+}
+
+div#language ul li {
+	margin:0px;
+	padding:0px 7px 0px 0px;
+	display:inline;
+}
+
+div#language ul li.act{
+	color:#F68816;
+}
+
+div#language ul li.no_lang{
+	color:silver;
+}
+
+div#language ul li a{
+	color:#005291;
+	text-decoration:none;
+}
+
+div#language ul li a:hover{
+	color:#F68816;
+}
+
+/*========================================================================
+	SERVICE
+========================================================================*/
+
+div#service ul {
+	margin:0px;
+	/*padding:7px 8px 0px 8px;*/	
+	list-style:none;
+	
+	padding:0px 8px 0px 8px;
+	line-height:30px;	
+}
+
+div#service ul li {
+	margin:0px;
+	padding:0px 13px 0px 0px;
+	/*padding:0px 11px 0px 0px;*/
+	display:inline;
+	float:left;
+}
+
+div#service ul li div.cur a, div#service ul li div.activ a{
+	color:#F57D00;
+}
+
+
+
+/*========================================================================
+	Navigation Main
+========================================================================*/
+
+div#bgMainNavigation0,div#bgMainNavigation1,div#bgMainNavigation2 {
+	position:absolute;
+	display:block;
+	top:84px; left:20px;
+	width:194px; height:30px;	
+	background-color:#f8f8f8;
+	z-index:2;
+}
+
+div#bgMainNavigation1 { top:118px; }
+div#bgMainNavigation2 { top:152px; }
+
+
+div#mainNavigation{
+	position:absolute;
+	display:block;
+	visibility:visible;
+	top:84px; left:20px;
+	width:198px; height:98px;
+	padding-left:7px;
+	background:none;
+	z-index:3;
+}
+
+
+* html div#mainNavigation {height:38px;}
+
+*+html div#mainNavigation {height:38px;}
+
+
+
+div#mainNavigation ul {
+	margin:0px;
+	padding:1px 0px 0px 7px;
+	list-style:none;
+}
+
+div#mainNavigation ul li {
+	margin:0px;
+	padding:0px 0px 0px 0px;
+}
+
+a.mainNavi0,a.mainNavi0:hover,a.mainNavi0Active,a.mainNavi0Def,   span.mainNavi0,span.mainNavi0:hover,span.mainNavi0Active,span.mainNavi0Def {
+	position:absolute;
+	display:block;
+	width:193px; 
+	top:2px;
+	color:#005291;
+	padding:4px 0px;
+	font-size:12px;
+	font-weight:bold;	
+	background: url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat 97% center;
+}
+
+a.mainNavi0:hover,a.mainNavi0Active {
+	color:#F75D00;		
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat 97% center;
+}
+
+a.mainNavi1,a.mainNavi1:hover,a.mainNavi1Active,a.mainNavi1Def {
+	position:absolute;
+	display:block;
+	width:193px; 
+	top:37px;
+	color:#005291;
+	padding:4px 0px;
+	font-size:12px;
+	font-weight:bold;	
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat 97% center;
+}
+
+a.mainNavi1:hover,a.mainNavi1Active {
+	color:#F75D00;		
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat 97% center;
+}
+
+a.mainNavi2,a.mainNavi2:hover,a.mainNavi2Active,a.mainNavi2Def {
+	position:absolute;
+	display:block;
+	width:193px; 
+	top:70px;
+	color:#005291;
+	padding:4px 0px;
+	font-size:12px;
+	font-weight:bold;	
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat 97% center;
+}
+
+a.mainNavi2:hover,a.mainNavi2Active {
+	color:#F75D00;		
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat 97% center;
+}
+
+a.mainNavi0Def,a.mainNavi1Def,a.mainNavi2Def {
+	font-size:12px;
+	font-weight:bold;
+	color:#F75D00;
+	cursor:default;
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat 97% center;
+}
+
+
+
+/*========================================================================
+	Subnavigation Main
+========================================================================*/
+
+div#containerSubnaviInteressierte,div#containerSubnaviWeiterbildung,div#containerSubnaviForschung {
+	position:absolute;
+	display:none;
+	top:84px; left:218px;
+	/*top:0px; left:198px;*/
+	width:254px;	
+	background-color:#f8f8f8;
+	z-index:3;
+	padding-bottom:10px;
+}
+
+div#containerSubnaviWeiterbildung { top:118px; }
+div#containerSubnaviForschung { top:152px; }
+
+div.subnaviAccordTitle {
+	position:relative;
+	width:227px; height:19px;
+	margin:0px 10px;
+	padding:5px 0px 5px 3px;
+	overflow:hidden;
+	color:#616164;
+	border-bottom:1px solid #005291;
+}
+
+/*div.subnaviAccordTitle.last{ border:none;}*/
+
+a.subnaviTitle,a.subnaviTitleBgPix /*span.subnaviTitle,span.subnaviTitleBgPix*/  {
+
+	display:block;
+	width:226px;
+	color:#005291;
+	font-weight:bold;
+}
+
+a.subnaviTitleBgPix /*span.subnaviTitleBgPix*/ { 
+background:url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat right center;
+cursor:pointer; }
+
+a.subnaviTitle:hover,a.subnaviTitleActive,a.subnaviTitleBgPix:hover,a.subnaviTitleBgPixActive /*span.subnaviTitle:hover,span.subnaviTitleActive,span.subnaviTitleBgPix:hover,span.subnaviTitleBgPixActive*/{
+	display:block;
+	width:226px;
+	font-weight:bold;
+	color:#F75D00;
+	cursor:pointer;
+}
+
+a.subnaviTitleBgPix:hover{
+background:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat 100% center;
+}
+
+a.subnaviTitleBgPixActive,a.subnaviTitleActive { 
+background:url(/fileadmin/templates/hsr/html/img/navigation/down1.gif) no-repeat right bottom; 
+}
+
+div.subnaviAccordContent {
+	position:relative;
+	margin:0px 14px 0px 10px;
+	padding:0px 0px 5px 0px;
+	overflow:auto;
+	display:none;
+	border-top:1px solid #005291;
+	border-bottom:1px solid #005291;
+	overflow:hidden;
+}
+
+div.subnaviAccordContent ul {	
+	list-style:none;
+	margin:0px 0px -6px 4px;
+	padding:0px;
+}
+
+div.subnaviAccordContent ul li.navLayout_0 {
+	background:url(/fileadmin/templates/hsr/html/img/layout/hightlight_line.gif) repeat-x top left;
+}
+
+/*link auf ganze Flaeche*/
+div.subnaviAccordContent ul li.navLayout_0 a{
+	display:block;
+}
+
+/* separator mainnavigation 2.ebene */
+ul li.navLayout_1+li.navLayout_0, li:first-child  {
+	background:none;
+}
+
+div.subnaviAccordContent ul li.navLayout_1 {
+	padding:0px;
+	margin:6px 0px 0px 0px;
+	border-top:1px solid #005092;
+	line-height:0px;
+}
+div#navigation ul li.navLayout_1 {
+
+	margin:10px 0px 0px 0px;
+}
+
+* html div.subnaviAccordContent ul li.navLayout_1 {
+	height:1px;
+	background-color:#FFFFFF;
+	margin:-2px 0px -4px 0px;
+	/*position:relative;
+	z-index:3;*/
+}
+
+
+div.subnaviAccordContent ul li.navLayout_0 span.last a{
+	padding-bottom:7px;
+}
+
+/* separator subnavigation 2.ebene */
+#navigation ul ul li.navLayout_1 {
+background-color:white;
+border-bottom:1px solid #005092;
+line-height:0;
+margin:-1px 0 0;
+padding:6px 0 0;
+}
+
+
+/*========================================================================
+	Navigation Left (Subsection)
+========================================================================*/
+
+/*c in layout: div#navigation {
+	display:block;
+	width:201px;
+}*/
+
+div#navigation ul{
+	/*position:relative;*/
+	margin:0px;
+	padding:0px;
+	display:block;
+	list-style:none;
+	border-top:1px solid #b3b4b5;
+	/*border-bottom:1px solid #b3b4b5;*/
+}
+
+/*div.subsubNavi,div.subsubsubNavi, */
+div#navigation ul li ul, div#navigation ul li ul li ul {
+	/*position:relative;*/
+	margin:0px 0px 0px 12px;
+	padding:0px;
+	display:block;
+	border-top:none;
+	/*border-bottom:none;*/
+}
+
+/*a.subNaviNode,a.subsubNaviNode,a.subsubsubNaviNode, */
+div#navigation ul li a, div#navigation ul li ul li a, div#navigation ul li ul li ul li a {
+	/*position:relative;*/
+	display:block;
+	color:#005291;	
+	border-bottom:1px solid #b3b4b5;
+	/*border-top:1px solid #b3b4b5;*/
+	
+	padding:0px 9px 0px 0px;
+}
+
+* html div#navigation ul li a, * html div#navigation ul li ul li a, * html div#navigation ul li ul li ul li a {
+	background:white;
+}
+
+/*a.subNaviNodeActive,a.subNaviNode:hover,a.subsubNaviNodeActive,a.subsubNaviNode:hover,a.subsubsubNaviNodeActive,a.subsubsubNaviNode:hover, */
+/*div#navigation ul li a, */div#navigation ul li a:hover, div#navigation ul li div.cur a, div#navigation ul li div.activ a {
+	display:block;
+	padding:0px 0px 0px 10px;
+	color:#F75D00;
+	background-image: url(/fileadmin/templates/hsr/html/img/navigation/right_orange.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+	border-bottom:1px solid #b3b4b5;	
+}
+
+
+
+/*========================================================================
+	SERVICE FOOTER
+========================================================================*/
+.footerInfo ul{float:left;}
+
+.footerInfo ul li {
+	display:inline;
+	border-right:1px solid #000000;
+	padding:0px 4px;
+	margin:0;
+}
+.footerInfo ul li a{
+	text-decoration:none;
+	color:#000000;
+}
+
+.footerInfo ul li a:hover { color:#005291;}
+
+/*Pagemaster aus Marker im HTML*/
+a.footerPageMaster{
+	padding:0px 0px 0px 4px;
+	color:#000000;
+}
+
+a.footerPageMaster:hover, div.print a:hover {color:#005291;}

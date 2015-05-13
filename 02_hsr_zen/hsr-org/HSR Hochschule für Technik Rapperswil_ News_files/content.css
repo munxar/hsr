@@ -1,0 +1,1073 @@
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		HSR Redesign 2008
+	date:			11/2008, claudia
+	version:		4.1
+	file:			content.css
+	function:		all contents-style  
+********************************************************************************************************/
+h1 {
+	font-size:12px;
+	font-weight:bold;
+	color:#ffffff;
+	margin:0px 0px 11px 0px;
+	padding:3px 0px 4px 7px;
+	display:block;
+}
+
+
+h2, h3, h6, h2.bulletlist{	
+	font-size:11px;
+	font-weight:bold;
+	margin-top: 15px;
+}
+
+h3, h5 {color:#616164;}
+
+h4, h5{	
+	font-size:14px;
+	font-weight:bold;
+	line-height:18px;
+	margin: 0 0 15px 0;
+}
+
+h6, h2.bulletlist{
+	padding:0px 0px 16px 0px;
+}
+
+p {
+	margin:0px;
+	padding:0px 0px 16px 0px;
+}
+
+p.bodytext {
+	/*padding: 0px;*/
+}
+
+#content ul {
+	list-style-type:none;
+	margin:0px;
+	margin:0px 0px 0px 3px;
+	padding:0px 0px 16px 0px;
+}
+
+
+#content ul li{
+	list-style:none;
+	display:block;
+	margin:0px;
+	padding:2px 0px 0px 22px;
+	background-repeat:no-repeat;
+	background-position:left 6px;	
+}
+
+#colRight ul li, #peopleBox ul li {background-position:left 6px;}
+
+* html #content #colLeft ul li{background-position:left 6px;}
+
+/*agentur???*/
+/** html #content ul li {
+	background:none;	
+	margin:2px 15px 0px 15px;
+	padding:0px 0px 0px 7px;
+}*/
+
+#content ul li, #colRight ul li, #peopleBox ul li{
+	background-repeat:no-repeat;		
+}
+
+/*contentelement sitemap*/
+
+#content ul.csc-menu  li ul{
+	margin:0px 0px 0px 3px;
+}
+
+
+
+/*========================================================================
+	People-Box	=	colBorder
+========================================================================*/
+div#peopleBox p {
+	padding:10px 10px 15px 10px; 
+	/*margin:5px 0px;*/
+}
+
+/*als infobox*/
+div#peopleBox div.actContent p{ padding:0px 5px 5px 5px;}
+
+div#peopleBox img {
+	/*margin:5px 0px;*/
+}
+
+div#peopleBox .csc-textpic-image{padding-bottom:12px;}
+
+div#peopleBox div.csc-textpic, div#peopleBox div.csc-textpic-imagewrap, div#peopleBox .csc-textpic-image{margin-bottom:0px;}
+
+div#peopleBox h1, div#peopleBox h2, div#peopleBox h3, div#peopleBox h4, div#peopleBox h5, div#peopleBox h6 {
+	/*padding:5px 5px 0px 5px;*/ 
+	padding:9px 10px 9px 10px;
+	margin:0px;
+	font-size:10px;
+	line-height:12px;
+	background:none;
+	color:#000000;
+}
+
+div#peopleBox div.actContent h1, div#peopleBox div.actContent h2, div#peopleBox div.actContent h3, div#peopleBox div.actContent h4, div#peopleBox div.actContent h5, div#peopleBox div.actContent h6 {
+	/*padding:5px 5px 0px 5px;*/ 
+	padding:9px 5px;
+}
+
+div#colRight div.actContent h1, div#colRight div.actContent h2, div#colRight div.actContent h3, div#colRight div.actContent h4, div#colRight div.actContent h5, div#colRight div.actContent h6, div#colNormal div.actContent h1, div#colNormal div.actContent h2, div#colNormal div.actContent h3, div#colNormal div.actContent h4, div#colNormal div.actContent h5, div#colNormal div.actContent h6 {
+	/*padding:5px 5px 0px 5px;*/ 
+	padding:9px 5px;
+	margin:0px;
+	font-size:10px;
+	line-height:12px;
+	background:none;
+	color:#000000;
+}
+
+
+div#peopleBox .csc-textpic{
+/*padding:0px 0px 5px 0px;*/}
+
+a:link,  a:visited,  a:active{
+	color:#005092;
+	text-decoration:none;
+}
+a:hover { 
+	color:#F57D00;
+}
+
+/*******Dropdown_Sitemap**********/
+.tx-dropdownsitemap-pi1 A, .tx-dropdownsitemap-pi1 A:link, .tx-dropdownsitemap-pi1 A:visited, .tx-dropdownsitemap-pi1 A:hover, .tx-dropdownsitemap-pi1 A:activ  {
+	font-weight: bold;
+	text-transform: normal;
+}
+
+/*  entfernt den Linkrahmen  um das bild  */ 
+img{
+	border: none ;	
+}
+img.icon{
+	padding-right:0.5em;
+	vertical-align: top;
+}
+
+ol {
+	margin:0px 10px 0px 13px;
+	padding:0px 10px 16px 13px;
+}
+
+.csc-sitemap ul {
+	margin:0px 10px 0px 8px;
+	padding:0px 10px 0px 8px;
+}
+
+/* searchbox */ 
+div.tx-macinasearchbox-pi1 {
+	float:left;
+}
+input.search-button {
+	vertical-align: text-bottom;
+}
+
+/* footer */
+#main_footer p.bodytext {
+	display:inline;
+}
+.tx-macinasearchbox-pi1 {
+	margin-top:5px;
+}
+
+
+/*  ------------------ RTE / Table styling   ------------------------------------  */
+TABLE.contenttable {  
+	width: 100%; 
+	line-height:16px; font-size:11px; /*RTE*/
+	border-collapse:collapse;
+	margin-bottom:16px;
+}
+
+TABLE.contenttable p.bodytext{ padding:1px 0px 2px 0px; margin:0;}
+
+TABLE.contenttable tr td, table tr td{/* border-bottom:1px solid #B3B4B5; */padding-right:10px;}
+
+#ce43938 TABLE.contenttable{
+	border: 1px solid #0065A3;
+}
+
+#ce43938 TABLE.contenttable td{
+	padding:10px 0 0 10px;
+	background-color: #FFFFFF;
+}
+
+#ce44040 TABLE.contenttable{
+	border: 1px solid #0065A3;
+}
+
+#ce44040 TABLE.contenttable td{
+	padding:10px 0 0 10px;
+	background-color: #FFFFFF;
+}
+
+#ce44044 TABLE.contenttable{
+	border: 1px solid #0065A3;
+}
+
+#ce44044 TABLE.contenttable td{
+	padding:10px 0 0 10px;
+	background-color: #FFFFFF;
+}
+
+#content table.contenttable tbody tr:nth-child(even) {
+	/*background:url(/fileadmin/templates/hsr/html/img/bg_td.gif) repeat-x left bottom;*/
+	background-color: #e3f1ff;
+}
+
+#content table.contenttable tbody tr:nth-child(odd) {
+	/*background:url(/fileadmin/templates/hsr/html/img/bg_td.gif) repeat-x left bottom;*/
+	background-color: #FFFFFF;
+}
+
+td p.bodytext{padding:0px; margin:0;}
+
+
+/*TABLE.contenttable { border: 1px #333333 solid; margin: 10px 0px 10px 0px; width: 100%; }
+TABLE.contenttable TR TD { padding: 0px 3px 0px 3px; }
+TABLE.contenttable TR TD P.bodytext { font-size: 12px; }
+TABLE.contenttable TR { background-color: #EDEBF1; }*/
+
+
+/********************************/
+/* Frames, spacing, link-to-top */
+/********************************/
+P.csc-linkToTop {
+}
+P.csc-linkToTop A { font-weight: bold; }
+
+#thebody .csc-frame { border: 0px; }
+#thebody .csc-frame-invisible {}
+#thebody .csc-frame-rulerBefore { border-top: 1px solid #D1D1D1; padding-bottom:8px; }
+#thebody .csc-frame-rulerAfter { border-bottom: 1px solid #D1D1D1; padding-top: 6px; padding-bottom: 6px;}
+#thebody .csc-frame-indent { padding-left: 100px; }
+#thebody .csc-frame-indent3366 { padding-left: 33%; }
+#thebody .csc-frame-indent6633 { padding-right: 33%; }
+
+#thebody .csc-frame-frame1 { 
+	background-color: #D6D79E;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #D1D1D1;
+	color: #1A171B;
+}
+
+#thebody .csc-frame-frame1 a { 
+	color: #1A171B;
+}
+
+#thebody .csc-frame-frame1 a:hover { 
+	color: #767476;
+}
+
+#thebody .csc-frame-frame2 { 
+	background-color: #7B6951;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #D1D1D1;
+	color: #FFFFFF;
+}
+
+#thebody .csc-frame-frame2 a { 
+	color: #FFFFFF;
+}
+
+#thebody .csc-frame-frame2 a:hover { 
+	color: #D1D1D1;
+}
+
+#thebody .csc-frame-frame3 { 
+	background-color: #FFFFFF;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #D1D1D1;
+	color: #1A171B;
+}
+
+#thebody .csc-frame-frame3 TABLE.contenttable { 
+	margin-bottom: 4px!important;
+}
+
+
+#thebody .csc-frame-frame1 H1, DIV.csc-frame-frame1 H2, DIV.csc-frame-frame1 H3, DIV.csc-frame-frame1 H4, DIV.csc-frame-frame1 H5 { margin-top: 2px;margin-bottom: 10px; }
+#thebody .csc-frame-frame2 H1, DIV.csc-frame-frame2 H2, DIV.csc-frame-frame2 H3, DIV.csc-frame-frame2 H4, DIV.csc-frame-frame2 H5 { margin-top: 2px;margin-bottom: 10px; }
+p.csc-frame-frame3, table.csc-frame-frame3 { background-color: #000000; padding: 2px 4px 2px 4px; border: 1px solid #333333;  color: #FFFFFF; }
+#thebody .csc-form-label-req{
+}
+
+
+/* Left, center and right alignment of text in paragraphs and cells.*/
+p.align-left, h1.align-left, h2.align-left, h3.align-left, h4.align-left, h5.align-left, h6.align-left, td.align-left { text-align: left; }
+p.align-center, h1.align-center, h2.align-center, h3.align-center, h4.align-center, h5.align-center, h6.align-center, td.align-center { text-align: center; }
+p.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, td.align-right { text-align: right; }
+
+/* Two frame examples taken from the example CSS file of CSS Styled Content extension and applied to p and table block elements.*/
+p.csc-frame-frame1, table.csc-frame-frame1 { 
+	background-color: #D6D79E;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #D1D1D1;
+	color: #FFFFFF;
+}
+
+p.csc-frame-frame1, table.csc-frame-frame1 a { 
+	color: #484549;
+}
+
+p.csc-frame-frame2, table.csc-frame-frame2 { 
+	background-color: #7B6951;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #D1D1D1;
+	color: #484549;
+}
+
+p.csc-frame-frame2, table.csc-frame-frame2 a { 
+	color: #FFFFFF;
+}
+
+/* Bullet styles for unordered lists.*/
+ul.component-items { color: #186900; list-style-type: circle; }
+ul.action-items { color: #8A0020; list-style-image: url(img/red_arrow_bullet.gif); }
+
+/* Numbering styles for ordered lists.*/
+ol.component-items-ordered { color: #10007B; list-style-type: lower-roman; }
+ol.action-items-ordered { color: #8A0020; list-style-type: lower-greek; }
+
+/* Three inline text colors taken from the color scheme of CSS Styled Content extension.*/
+span.important { color: #8A0020; }
+span.name-of-person { color: #10007B; }
+span.detail { color: #186900; }
+
+/* Selectors for the default configuration of the link accessibity feature.*/
+a.external-link {}
+a.external-link-new-window {}
+a.internal-link {}
+a.internal-link-new-window {}
+a.download {}
+a.mail {}
+
+
+
+/*========================================================================
+	INFO-Boxen (colRight)
+========================================================================*/
+
+div.actContainer,div.actContainerblock {
+	position:relative;
+	margin-bottom:10px;
+	/*padding-bottom:4px;*/
+}
+
+* html div.actContainer,div.actContainerblock {
+	/*padding-bottom:2px;*/
+}
+
+#peopleBox div.actContainer, #peopleBox div.actContainerblock{margin-bottom:0px;}
+
+
+/*div.actTitle,div.actTitleActive {*/
+span.actTitle,span.actTitleblock {
+	cursor:pointer;
+	overflow:hidden;
+	width:144px;
+	font-size:10px;
+	line-height:13px;
+	padding-bottom:4px; 
+}
+
+* html span.actTitle, * html span.actTitleblock {
+	padding-bottom:2px; 
+}
+
+
+* html div.actContainerblock span.actTitle{
+	/*padding-bottom:2px; */
+}
+
+span.actTitleText {
+	float:left;
+	padding:4px 0px 2px 5px;
+	font-weight:bold;
+	overflow:hidden;
+	width:118px;
+	font-size:10px;
+	line-height:13px; 
+}
+
+* html span.actTitleText {
+padding:5px 0px 3px 5px;
+
+}
+
+
+/*headerstyle*/
+#colRight span.actTitleText h1, #colRight span.actTitleText h2, #colRight span.actTitleText h3, #colRight span.actTitleText h4, #colRight span.actTitleText h5, #colRight span.actTitleText h6{
+	font-size:10px;
+	line-height:13px;
+	font-weight:bold;
+	padding:0px;
+	margin:0px;
+	background:none;
+	color:#000000;
+}
+/*div.actTitlePix,div.actTitlePixActive {*/
+span.actTitlePix,span.actTitlePixblock{
+	display:block;
+	float:right;
+	height:9px;
+	width:10px;
+	padding:6px 0px 2px 1px;
+		background-image: url(/fileadmin/templates/hsr/html/img/navigation/right1.gif);
+	background-position: right 7px;	
+}
+/*div.actTitlePixActive {*/
+span.actTitlePixblock {
+	width:15px;
+	height:9px;
+	padding-top:8px;
+	background-image: url(/fileadmin/templates/hsr/html/img/navigation/down1.gif);
+	background-position: right 7px;	
+}
+
+div.actContent div.csc-textpic-text {
+	padding-top: 10px;
+}
+
+div.actContent,div.actContentActive,div.actOpen {
+	display:none;
+	padding:3px 0px;
+	margin:0px;
+	border-top:solid 1px #FFFFFF;
+	width:144px;
+	/*overflow:auto;*/
+	overflow:hidden;
+	font-size:10px;
+	line-height:13px;
+}
+
+div.actContent dl.csc-textpic-image, div.actContentActive dl.csc-textpic-image, div.actOpen dl.csc-textpic-image{
+ margin-top:-3px;	
+}
+
+
+
+* html div.actContent, * html div.actContentActive, * html div.actOpen {
+ padding:0px 0px 3px 0px;	
+}
+
+
+
+
+div.actContent img,div.actOpen img { margin:0px 0px 5px 0px; }
+
+
+
+div.actContent p { padding:0px 5px 5px 5px; }
+
+
+
+#content #colNormal div.actContent ul, #colRight div.actContent ul, #peopleBox div.actContent ul{ 
+	padding:0px 5px 5px 5px;
+	margin:-5px 0px 0px 3px;
+	list-style: none outside none;
+}
+
+#content #colNormal div.actContent ul li, #colRight div.actContent ul li, #peopleBox div.actContent ul li{
+	padding:2px 0 0 15px;
+}
+
+div.actContentActive,div.actOpen { 
+	display:block;
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+		INFO BOXEN IN ALLLEN CE/SUBS
+---------------------------------------------------------------------------------------------------*/
+
+
+#colNormal span.actTitle, #colNormal span.actTitleblock, #colNormal span.actTitleText, #colNormal div.actContent, #colNormal div.actContentActive, #colNormal div.actOpen{
+	/*width:auto;*/
+
+}
+
+/*#col_3 #colLeft div.actTitle, #col_3 #colLeft div.actTitleblock, #col_3 #colLeft div.actTitleText, #col_3 #colLeft div.actContent, #col_3 #colLeft div.actContentActive, #col_3 #colLeft div.actOpen{
+	width:auto;
+}*/
+/*1 Spalter*/
+#colLeft span.actTitle, #colLeft span.actTitleblock, #colLeft div.actContent, #colLeft div.actContentActive, #colLeft div.actOpen{
+	width:688px;
+}
+ #colLeft span.actTitleText{ width: 661px;font-size:11px;}
+/*2 Spalter*/
+#col_2 #colLeft span.actTitle, #col_2 #colLeft span.actTitleblock, #col_2 #colLeft div.actContent, #col_2 #colLeft div.actContentActive, #col_2 #colLeft div.actOpen{
+	width: 534px;
+}
+#col_2 #colLeft span.actTitleText{width: 507px;}
+/*3 Spalter*/
+#col_3 #colLeft span.actTitle, #col_3 #colLeft span.actTitleblock, #col_3 #colLeft div.actContent, #col_3 #colLeft div.actContentActive, #col_3 #colLeft div.actOpen{
+	width: 380px;
+	pading-bottom:1px;
+	margin-bottom:2px;
+}
+
+/*im colLeft Infobox Titel 11px*/
+#col_3 #colLeft span.actTitleText{width: 353px;font-size:11px;}
+
+/*4 Spalter*/
+#col_4 #colLeft span.actTitle, #col_4 #colLeft span.actTitleblock, #col_4 #colLeft div.actContent, #col_4 #colLeft div.actContentActive, #col_4 #colLeft div.actOpen{
+	width: 226px;
+}
+#col_4 #colLeft span.actTitleText{width: 204px;/*font-size:10px;*/}
+
+#col_4 #colNormal span.actTitleText{width:118px;}
+
+/*Info-Boxen im colLeft und ColNormal -> Hg weiss*/
+div#colLeft div.actContainerblock, div#colNormal div.actContainerblock{	padding-bottom:0px;}
+
+div#colLeft div.actContainerblock div.actContent/*, div#colNormal div.actContainerblock div.actContent*/{
+	background-color:white;
+}
+
+#colLeft div.actContent, div.actContentActive, div.actOpen {
+font-size:11px;
+line-height:16px;
+}
+
+/*#colLeft div.actContent p {
+padding:0 0 16px;
+}*/
+
+#colLeft div.actContent ul {
+margin:-16px 0 0 2px;
+padding:0 0 16px;
+}
+
+#col_4 #colLeft{
+}
+
+#col_4 #colLeft span.actTitleText h1, #col_4 #colLeft span.actTitleText h2, #col_4 #colLeft span.actTitleText h3, #col_4 #colLeft span.actTitleText h4, #col_4 #colLeft span.actTitleText h5, #col_4 #colLeft span.actTitleText h6{
+	font-size:10px;
+	line-height:13px;
+	font-weight:bold;
+	padding:0px;
+	margin:0px;
+	background:none;
+	color:#000000;
+}
+
+#col_4 #colLeft div.actContent,#col_4 #colLeftdiv.actContentActive,#col_4 #colLeftdiv.actOpen, #col_4 #colLeft {
+	/*font-size:10px;
+	line-height:13px;*/
+}
+
+#col_4 #colLeft div.filelinks_layout_1 div,#col_4 #colLeft div.filelinks_layout_0 div {
+height:auto;
+/*line-height:13px;*/
+}
+
+/*#col_4 #colLeft p{padding:0px 0px 8px 0px;}*/
+
+#colLeft div.actContent /*#col_3 #colLeft div.actContent, #col_2 #colLeft div.actContent, #col_4 #colLeft div.actContent*/{padding-top:10px;}
+
+/*========================================================================
+	INFO-Boxen (Hover Pfeil)
+========================================================================*/
+div.actContainer span.actTitle, div.actContainer span.actTitleblock{
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat right 7px;
+	color:#000000;
+	display:block;
+}
+
+div.actContainerblock span.actTitle{
+	color:#000000; /*background:none;*/
+	
+	/*background:url(/fileadmin/templates/hsr/html/img/navigation/down1.gif) no-repeat right 7px;*/
+	display:block;
+}
+
+div.actContainerblock span.actTitleblock{
+	color:#000000;
+	display:block;
+	background:url(/fileadmin/templates/hsr/html/img/navigation/down1.gif) no-repeat right 7px;
+}
+
+div.actContainer span.actTitle:hover, div.actContainer span.actTitleblock:hover{
+	background:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat right 7px;
+	color:#F57D00
+	display:block;
+}
+
+div.actContainerblock p.bodytext {
+	margin: 0px 0px 13px;
+}
+
+span.actTitlePix{
+	background:none;
+}
+
+
+/*========================================================================
+	Login und Shortcuts
+========================================================================*/
+#navTop_intern {
+	cursor:pointer;
+	color:#005092;
+}
+
+#navTop_intern:hover {
+	color:#F57D00;
+}
+
+div#login {
+	display:block;
+	left:309px;
+	position:absolute;
+	top:36px;
+	width:240px;
+	z-index:99;
+	display:none;
+}
+span#loginClose {
+	cursor:pointer;
+	display:block;
+	color:#005291;
+	font-weight:bold;
+	width:230px;
+	height:20px;
+	background-color:#FFFFFF;
+	background-position: 216px;
+	background-image: url(/fileadmin/templates/hsr/ext/print/close_window.gif);
+	background-repeat: no-repeat;
+	padding:6px 0 5px 10px;
+}
+a:hover span#loginClose {
+	background-image: url(/fileadmin/templates/hsr/ext/print/close_window_hover.gif);
+}
+.loginBox{
+	/*padding:0px 0px 5px 10px;*/
+	padding:0px 0px 5px 0px;
+	background-color:#FFFFFF;
+}
+#login .contentElement {
+	background-color:#FFFFFF;
+	padding:0px 10px 5px 10px;
+}
+.loginBox p {
+
+	padding:0;
+}
+
+.loginBox label {
+	width:100px;
+	float:left;
+	display:block;
+}
+
+.loginBox input {
+	border:1px solid #015092;
+	color:#015092;
+	font-size:11px;
+	height:15px;
+	line-height:12px;
+	margin-bottom:3px;
+	width:218px;
+}
+
+input[type="checkbox"], input[type="radio"]{
+   background: transparent;
+   border: none;
+   width:17px;
+}
+
+.loginBox input.submit {
+	background-color:#FFFFFF;
+	border:medium none;
+	color:#015092;
+	cursor:pointer;
+	font-size:11px;
+	font-weight:bold;
+	height:17px;
+	margin:0 0 0 97px;
+	display:block;
+	padding:0;
+	width:65px;
+
+	background:transparent url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat scroll 97% center;
+	background-position: right;
+}
+	/** .loginBox input.submit {margin:0 0 0 82px;}
+	*+.loginBox input.submit {margin:0 0 0 82px;}*/
+
+#login .loginBox{padding:0px 10px 5px 10px;}
+
+#login .loginBox input.submit {margin:0 0 0 157px;}
+
+.loginBox a:hover input.submit{
+	color:#F68816;
+	background:transparent url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat scroll 97% center;
+	background-position: right;
+}	
+* html .loginBox input.submit {
+	margin:0 0 0 87px;
+}
+
+#loginNav {
+	margin:6px 0 6px 0;
+	background-color:#FFFFFF;
+}
+
+#loginNav ul {
+	position:absolute;
+	width:240px;	
+	background-color:#FFFFFF;
+	z-index:3;
+	padding-bottom:6px;
+}
+#loginNav ul li {
+	position:relative;
+	width:215px; 
+	height:19px;
+	margin:0px 10px;
+	padding:5px 0px 5px 3px;
+	overflow:hidden;
+	color:#616164;
+	border-bottom:1px solid #005291;
+}
+#loginNav ul li a{
+	position:absolute;
+	display:block;
+	width:226px;
+	height:19px;
+	top:2px;
+	color:#005291;
+	padding:4px 0px;
+	font-size:12px;
+	font-weight:bold;	
+	background: url(/fileadmin/templates/hsr/html/img/navigation/right1.gif) no-repeat 97% center;
+}
+#loginNav ul li a:hover {
+	background: url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif) no-repeat 97% center;
+	color:#f68816;
+}
+
+
+/*-------------  Formatierung Filelinks  ----------------------------*/
+
+/*mit icon, ohne icon, mit thumbs */
+
+div.filelinks_layout_1 div.fileWrap, div.filelinks_layout_0 div.fileWrap {
+	height: auto;
+	margin:0px 0px 4px 0px;
+	padding:0px 0px 3px 0px;
+	line-height:16px;
+}
+div.filelinks_layout_1 div.fileWrap a, div.filelinks_layout_0 div.fileWrap a {
+
+	padding:0px 0px 3px 36px;
+	line-height:16px;
+}
+div.filelinks_layout_2  {
+
+}
+div.filelinks_layout_2 div.fileWrap {
+/* background-color: #EDEBF1;*/
+ width:221px;
+ padding:5px;
+ margin-bottom:15px;	
+ float:left;
+}
+
+
+.filelink_download {
+  padding:5px 0 5px 0;
+  font-size:12px;
+}
+
+.filelinks_layout_1 .filelink_download, .filelinks_layout_0 .filelink_download {
+ display:none;
+}
+
+
+
+* html div.filelinks_layout_1 div, div.filelinks_layout_0  div{
+	padding:0px 0px 3px 37px;
+}
+
+div.filelinks_layout_0  div{
+	padding:0px;
+}
+
+/*2. Spalte 144px und colRight Icon oben*/
+#colNormal div.filelinks, #colRight div.filelinks, #peopleBox div.filelinks{padding:0px 5px 0px 6px;}
+#colNormal div.filelinks_layout_1 div, #colRight div.filelinks_layout_1 div, #peopleBox div.filelinks_layout_1 div{padding:20px 0px 0px 0px; margin:0px 0px 8px 0px; line-height:13px;}
+#colNormal div.filelinks_layout_1 div div, #colRight div.filelinks_layout_1 div div, #peopleBox div.filelinks_layout_1 div div{padding:0px;}
+
+
+
+/*Linke Spalte, line 645*/
+#colLeft div.filelinks, #colLeft div.filelinks div{
+	margin:0px 0px 7px 0px;
+
+}
+#colLeft div.filelinks_layout_1 span a{}
+#colLeft div.filelinks_layout_1 div div, #colLeft div.filelinks_layout_0 div div{padding:0px;}
+
+
+/*abstand unter letztem fileicon*/
+div.filelinks_layout_1 div.last{
+	padding-bottom:0px;
+}
+/* mit thumbnails */
+div.filelinks_layout_1 img, div.filelinks_layout_0 img {
+  display:none;
+}
+
+
+
+/*-----------------  Medien  ---------------------------------*/
+/* icsmedienmitteilungen */
+.tx-icsmedienmitteilungen-pi1 h2 {
+	padding:8px 0 4px 0;
+	border-top:1px solid #B3B4B5;
+	margin:5px 0px 0px 0px;
+}
+
+/*div.actContent{display: compact;}*/
+
+/*Personenliste*/
+div.tx-icscrm-pi4 h3{}
+
+#content div.tx-icscrm-pi4 td ul{margin:0px 0 0 3px;
+padding:0px;}
+
+
+.tableBgNo {
+border-collapse: collapse;
+}
+
+/*-----------------  tt-news  ---------------------------------*/
+/*---------  Listen Darstellung  ---------*/
+
+div.news-list-container div.news-list-item h3 span.news-list-date{
+	display:block;
+	font-size:10px;
+	font-weight:normal;
+	margin:-5px 0px 0px 0px;
+	color:#878D8B;
+}
+
+div.news-list-container div.news-list-item h3{
+	font-size:12px;
+	color:#000000;
+	margin:0px 0px 15px 0px;
+}
+
+div.news-list-container div.news-list-item div.news-list-date{
+	color:#A4A2A4;
+	font-size:10px;
+	margin-bottom:15px;
+}
+
+div.news-list-container div.news-list-item img{
+	float:left;
+	width:166px;
+	height:120px;
+	padding:0px 10px 10px 0px;
+}
+
+div.news-list-container div.news-list-item div.news-list-morelink{
+	clear:both;
+	/*margin:5px 0px;*/
+	color:#005291;
+}
+
+div.news-list-container div.news-list-item div.clearer{
+	border-bottom:1px solid #B3B4B5;
+	margin:0px 0px 10px 0px;
+}
+
+div.news-list-date-2{
+	color: #A4A2A4;
+	font-size:10px;
+	margin-bottom:15px;
+}
+
+/*---------  Archive Darstellung  ---------*/
+
+div.news-archive-container div.news-archive-item {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+div.news-archive-container div.news-archive-item h3 span.news-archive-date{
+	display:block;
+	font-size:10px;
+	font-weight:normal;
+	margin:-5px 0px 0px 0px;
+	color:#878D8B;
+}
+
+div.news-archive-container div.news-archive-item h3{
+	font-size:12px;
+	color:#000000;
+	margin:0px 0px 15px 0px;
+}
+
+div.news-archive-container div.news-archive-item div.news-archive-date{
+	color:#A4A2A4;
+	font-size:10px;
+	margin-bottom:15px;
+}
+
+div.news-archive-container div.news-archive-item img{
+	float:left;
+	width:166px;
+	height:120px;
+	padding:0px 10px 10px 0px;
+}
+
+div.news-archive-container div.news-archive-item div.news-archive-morelink{
+	clear:both;
+	margin:5px 0px;
+	color:#005291;
+}
+
+div.news-archive-container div.news-archive-item div.clearer{
+	border-bottom:1px solid #B3B4B5;
+	margin:0px 0px 10px 0px;
+}
+
+div.news-archive-date-2{
+	color: #A4A2A4;
+	font-size:10px;
+	margin-bottom:15px;
+}
+
+/*-----------------  Sitemap  ---------------------------------*/
+#content div.csc-sitemap{margin:0px 0px 20px 0px;}
+
+#content div.csc-sitemap ul{padding:0; margin:0px;}
+
+#content div.csc-sitemap ul li{
+	list-style:none;
+	background:none;
+	padding:10px 0px 0px 0px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#content div.csc-sitemap ul li ul li{
+	padding:10px 0px 0px 30px;
+	font-size:11px;
+	font-weight:bold;
+}
+
+#content div.csc-sitemap ul li ul li ul li{
+	padding:5px 0px 0px 20px;
+	font-size:11px;
+	font-weight:normal;
+}
+
+#content div.csc-sitemap ul li ul li ul li ul{margin:0px 0px 0px 1px;}
+
+#content div.csc-sitemap ul li ul li ul li ul li{
+	background:url(/fileadmin/templates/hsr/html/img/content/bulletBl.gif) no-repeat left 4px;
+	line-height:16px;
+	padding:0px 0px 0px 11px;
+	font-size:11px;
+	font-weight:normal;
+}
+
+#content div.csc-sitemap ul li ul li ul li ul li ul li{
+	background:none;
+	padding:0px 0px 0px 20px;
+	font-size:10px;
+	font-weight:normal;
+}
+/* direct mail subscription */ 
+div.ce_catlist {
+  margin:3px 0 10px;
+}
+
+
+div.ce_catlist input {
+  display:inline;
+  height:17px;
+  left:600px;
+  margin-top:3px;
+  position:absolute;
+}
+
+/*Personensuche im Inhalt*/
+div.tx-icscrm-pi4 table tr td {
+padding:2px;
+}
+
+div.tx-icscrm-pi4 input{
+border:1px solid #004387;}
+
+div.tx-icscrm-pi4 input.search_insite{ background:#CCDCE9; cursor:pointer; padding:0px 5px;}
+
+
+
+
+
+/*** plugin: ttcontent_columns  ***/
+
+/* 2 Spalten */
+.tx_ttcontent_columns_col1 {
+  float:left;
+  padding:10px 0 0 0;
+  width:267px;
+  
+}
+.tx_ttcontent_columns_col2  {
+  float:left;
+  padding:10px 0 0 0;
+  width:247px;
+}
+
+
+
+/* 3 Spalten */
+.tx_ttcontent_3columns .tx_ttcontent_columns_col1, .tx_ttcontent_3columns .tx_ttcontent_columns_col2 , .tx_ttcontent_3columns .tx_ttcontent_columns_col3 {
+  float:left;
+  padding:10px 0 20px 0px;
+  width:178px;
+}
+
+div.tx_ttcontent_2columns, div.tx_ttcontent_3columns {
+  clear:left;
+}
+
+
+/*******timestamp wohnungsboerse**********/
+.tstamp{
+color:#666666;
+font-size:10px;
+}
+
+
+.tx-rgsmoothgallery-pi1 {
+	margin:5px 0 5px 0;
+	
+}
+
+
+DIV#colLeft p.file_description {
+	color: #767476;
+	margin-left: 35px;
+}
+
+/*******powermail_frontend**********/
+DIV.tx-powermailfrontend-pi1 {
+	
+}

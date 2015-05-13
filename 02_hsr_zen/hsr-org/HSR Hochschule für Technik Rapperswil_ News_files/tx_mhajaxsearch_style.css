@@ -1,0 +1,50 @@
+#tx_mhajaxsearch_result {
+	margin-top:35px;
+	left:636px;
+	width:201px;
+}
+
+span.tx_mhajaxsearch_result ul.tx_mhajaxsearch_ul{
+	background-color:#E6E6E6;
+}
+
+
+#tx_mhajaxsearch_spinner {
+	display: none;
+}
+
+ul.tx_mhajaxsearch_ul {
+	padding: 0px 5px 8px 11px;
+	margin: 0px 0px 0px 0px;
+	list-style-type: none;
+}
+
+ul.tx_mhajaxsearch_ul li{
+	padding: 0;
+	margin: 0;
+}
+ul.tx_mhajaxsearch_ul h2 {
+	padding: 7px 0px 0px 0px;
+	margin: 0;
+}
+
+.tx_mhajaxsearch_grey {
+	color: #cccccc;
+	background-color: #F8F8F8;
+}
+#searchResult_buttonAll {
+	background-color:#E6E6E6;
+	background-image:url(/fileadmin/templates/hsr/html/img/navigation/right1.gif);
+	background-position:right center;
+	background-repeat:no-repeat;
+	display:block;
+	margin-top:5px;
+	padding:3px 18px 4px 0;
+	text-align:right;
+	cursor:pointer;
+	color:#005092;
+}
+#searchResult_buttonAll:hover {
+	color:#F75D00;
+	background-image:url(/fileadmin/templates/hsr/html/img/navigation/right1_hover.gif);
+}

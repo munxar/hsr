@@ -1,0 +1,705 @@
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		HSR Redesign 2008
+	date:			03/2009, claudia
+	version:		4.1
+	file:			mailform.css
+	function:		all Formular-style  
+********************************************************************************************************/
+
+/*========================================================================
+	MAILFORM
+========================================================================*/
+
+input[type="checkbox"], input[type="radio"] {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    width: auto;
+}
+
+
+/**
+ * This class represents the outer mailform table. In this table
+ * all fields and elements are shown in cells
+ */
+.mailform-table-outer {}
+.mailform-table-outer td{padding-right:0px;
+width:auto;
+text-align:left;}
+
+/**
+ * If you like to access every single cell, please use the form wizard
+ * You may input here a class which is used for every cell, but you must
+ */
+
+/**
+ * td-no-style represents every single defined cell. But you can change the
+ * class of every cell in the field wizard
+ */
+.td-no-style { background-color: #FFF; }
+/**
+ * This class is used for the outer container of a Form-Element
+ * IF the current form content is valid
+ * In the current version not used, for later purposes
+ */
+.tx_mailform_valid { }
+
+/**
+ * This class is used for the outer container of a Form-Element
+ * IF the current form content is not valid.
+ */
+.tx_mailform_invalid { }
+
+/**
+ * This class is used for the outer container of a Form-Element
+ * IF the current content is required, and the user has not yet input
+ * the required data
+ */
+.tx_mailform_required { }
+
+/**
+ * This class is used for the outer container of a Form-Element
+ * The class is used, if the form has not yet sent, and is not corrected.
+ * Actually this is the class, the user will see the most (if he inputs correct
+ * data)
+ */
+.tx_mailform_none { }
+
+/**
+ * If the user inputs invalid data, the error will be displayed with
+ * this text formation
+ */
+.tx_mailform_FieldErrorMessage {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+/**
+ * This is the class which will be the outer container class for Layout
+ * elements.
+ * That excludes all form elements.
+ * It Includes eg title-element, html-element, separator-element
+ */
+.tx_layout_element_container {
+	color: #F00;
+}
+
+/*******************************************************************************
+
+ Formular required star
+
+ All existing possibilities for a required star are listed below
+
+*******************************************************************************/
+.tx_mailform_required_star {}
+.tx_mailform_required_star-ok {}
+.tx_mailform_required_star-required {}
+.tx_mailform_required_star-error {}
+
+/*******************************************************************************
+
+ Formular element label definition
+
+ All current existing elements are listed below
+ You can separately design every different element type
+
+*******************************************************************************/
+
+.tx_mailform_label_global {}
+
+.tx_mailform_label_textarea {}
+
+.tx_mailform_label_title {}
+
+.tx_mailform_label_text {}
+
+.tx_mailform_label_textwdesc {}
+
+.tx_mailform_label_default {
+	width:200px;}
+
+.tx_mailform_label_submit {}
+
+.tx_mailform_label_file {}
+
+.tx_mailform_label_password {}
+
+.tx_mailform_label_radio {}
+
+.tx_mailform_label_select {}
+
+.tx_mailform_label_layout_default {}
+
+.tx_mailform_label_navi_nextpage {}
+
+.tx_mailform_label_navi_previouspage {}
+
+.tx_mailform_label_navi_pagenavi {}
+
+.tx_mailform_label_navi_reset {}
+
+.tx_mailform_label_submit {}
+
+/*******************************************************************************
+
+ Formular element layout definition
+
+ All current existing elements are listed below
+ You can separately design every different element type
+
+*******************************************************************************/
+
+ /**
+  * Normal Text element
+  */
+.tx_mailform_text {
+  font-size: 11px;
+  color: #000;
+  border: 1px solid #222;
+  height: 15px;
+}
+
+/**
+ * Select (Dropdown / Multiselect)
+ */
+.tx_mailform_select {
+  font-size: 10px;
+  color: #000;
+  border:1px solid #A4A2A4;
+  margin-bottom: 5px;
+}
+
+.tx_mailform_option {
+  font-size: 10px;
+  color: #000;
+}
+
+/**
+ * Textarea
+ */
+.tx_mailform_textarea {
+  font-size: 11px;
+  font-family: Arial;
+  color: #000;
+  background-color: #F3F3F3;
+  margin-bottom: 5px;
+  border: 1px solid #A4A2A4;
+  width:220px;
+ }
+
+/**
+ * Hidden Field
+ * (Actually it does not make sense to design a invisible element)
+ */
+.tx_mailform_hidden {
+  font-size: 10px;
+  color: #000;
+  border: 1px solid #A4A2A4;
+}
+
+/**
+ * Password field
+ */
+.tx_mailform_password {
+  font-size: 10px;
+  color: #000;
+  border: 1px solid #A4A2A4;
+  margin-bottom: 5px;
+}
+
+/**
+ * File Upload
+ * Currently not functional
+ */
+.tx_mailform_file {
+  font-size: 10px;
+  color: #000;
+  border: 1px solid #A4A2A4;
+  margin-bottom: 5px;
+ }
+
+/**
+ * Captcha
+ */
+.tx_mailform_captcha {
+  font-size: 15px;
+  color: #000;
+  border: 1px solid #A4A2A4;
+  height: 18px;
+}
+
+
+
+/**
+ * Checkboxes
+ */
+input.tx_mailform_checkbox_box {
+
+}
+div.tx_mailform_checkbox_wrap {
+	overflow:visible;
+	margin-right:7px;
+	width:auto;
+}
+* html div.tx_mailform_checkbox_wrap {
+	overflow:visible;
+	height:1%;
+}
+
+div.tx_mailform_field_checkbox, div.tx_mailform_field_radio{padding:0px 0px 7px 0px; margin-bottom:0px;}
+
+* html div.tx_mailform_field_checkbox, div.tx_mailform_field_radio{padding:0px 0px 7px 0px; margin-bottom:-20px;}
+
+*+html div.tx_mailform_field_checkbox, div.tx_mailform_field_radio{padding:0px 0px 7px 0px; margin-bottom:0px;}
+
+/*labelbreite checkbox*/
+div.tx_mailform_checkbox_element {}
+
+td.tx_mailform_checkbox_text, label.tx_mailform_cb_label {}
+
+
+div.tx_mailform_checkbox_element{  display:block;}
+
+label.tx_mailform_cb_label {
+  font-size: 11px;
+  color: #000;
+  margin:0px 3px;
+}
+
+span.tx_mailform_required_star, span.tx_mailform_required_star-required { margin:0px 3px 0px 0px;}
+
+/**
+ * Radio Buttons
+ */
+input.tx_mailform_radio_button { }
+
+td.tx_mailform_radio_text {
+  font-size: 10px;
+  color: #000;
+  padding: 5px;
+}
+label.tx_mailform_rb_label {
+  font-size: 10px;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+
+tx_mailform_radio_element {
+	width:120px;
+	height:15px;
+}
+
+/*******************************************************************************
+
+ Layout-element layout definition
+
+ All current existing elements are listed below
+ You can separately design every different element type
+
+*******************************************************************************/
+
+/**
+ * Popular HR Separator
+ */
+.tx_mailform_hrSeparator {
+  width: 100%;
+  height: 2px;
+  margin-top:8px;
+}
+
+*+html .tx_mailform_hrSeparator {margin-top:4px;}
+
+* html .tx_mailform_hrSeparator { margin-top:4px;height: 0px; padding:0px;}
+table.mailform-table-outer tr td div hr.tx_mailform_hrSeparator {
+	height: 2px;
+	background-color: #F68816;
+}
+/**
+ * Text Title
+ */
+.mailform-table-outer h3 {
+  display: block;
+}
+
+/**
+ * HTML - Element
+ *
+ * - The HTML Element is not accessable over CSS.
+ * - Please Include your CSS Definition in your specified HTML Element
+ * - In the Wizard
+ */
+
+ /*******************************************************************************
+
+ Navigation-element layout definition
+
+ All current existing elements are listed below
+ You can separately design every different element type
+
+*******************************************************************************/
+ /**
+ * Submit Button
+ */
+.tx_mailform_submit {
+  font-size: 10px;
+  color: #000;
+  border: 1px solid #A4A2A4;
+  margin-top: 8px;
+  padding:0px 5px;
+  cursor:pointer;
+ }
+ 
+*+html .tx_mailform_submit {margin-top: 4px;}
+* html .tx_mailform_submit {margin-top: 8px;}
+
+/**
+ * Submitbutton with extended features
+ */
+.tx_mailform_submitextended {
+  font-size: 10px;
+  color: #000;
+  border: 1px solid #A4A2A4;
+  margin-bottom: 5px;
+}
+
+.tx_mailform_navi_nextpage {
+	font-size: 10px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.tx_mailform_navi_previouspage {
+	font-size: 10px;
+	color: #000;
+	border: 1px solid #A4A2A4;
+	margin-bottom: 5px;
+}
+
+.tx_mailform_navi_reload {
+	font-size: 10px;
+	color: #000;
+	border: 1px solid #A4A2A4;
+	margin-bottom: 5px;
+}
+
+.tx_mailform_navi_pagenavi {
+	font-size: 10px;
+	color: #000;
+	border: 1px solid #A4A2A4;
+	margin-bottom: 5px;
+}
+
+EAECE2
+
+.tx_mailform_navi_reset {
+
+}
+
+
+
+.tx_mailform_field_text,
+.tx_mailform_field_textwdesc,
+.tx_mailform_field_textwdesc-anderes_textfeld,
+.tx_mailform_field_textarea,
+.tx_mailform_field_select,
+.tx_mailform_field_radio,
+.tx_mailform_field_password,
+.tx_mailform_field_submit,
+.tx_mailform_field_submitimage,
+.tx_mailform_field_submitextended,
+.tx_mailform_field_file {
+  width:100%;
+	overflow:hidden;
+}
+
+.tx_mailform_field_text-float,
+.tx_mailform_field_text-float_labelrechts {
+	float:left;
+}
+
+.tx_mailform_field_text-float_ohnelabel {
+	float:left;
+	overflow:hidden;
+}
+
+.tx_mailform_field_select-float_left_withlabel,
+.tx_mailform_field_select-float_left {
+	float:left;
+	width:100%;
+}
+
+.tx_mailform_field_checkbox {
+	overflow:hidden;
+}
+
+.tx_mailform_field_captcha {}
+.tx_mailform_field_staticcountry {}
+.tx_mailform_field_contelement {}
+
+
+/**
+ * Layout Elements
+ */
+.tx_mailform_layout_default {}
+/*Zwischentitel*/
+.tx_mailform_layout_title {}
+.tx_mailform_layout_htmlelement {}
+.tx_mailform_layout_error {}
+
+/**
+ * Navigation
+ */
+.tx_mailform_navi_pagenavi {}
+.tx_mailform_navi_nextpage {}
+.tx_mailform_navi_previouspage {}
+.tx_mailform_navi_reset {}
+
+/*error-message*/
+.tx_mailform_div_label_error {
+  	color:#F00;
+	font-weight: bold;
+}
+
+.tx_mailform_div_input {
+	float:left;
+}
+
+.tx_mailform_div_icon {
+	float:left;
+}
+
+.tx_mailform_div_err_msg,
+.tx_mailform_div_err_msg_block {
+	display:block;
+}
+.tx_mailform_div_err_msg,
+.tx_mailform_div_err_msg_float-left {
+	float:left;
+}
+
+.tx_mailform_div_err_msg_float-none {
+	float:none;
+	height:1px;
+}
+.tx_mailform_div_err_msg_1 {
+	float:left;
+	color:red;
+}
+
+.tx_mailform_field_text-float_labelrechts_input {
+	width:60px;
+}
+
+.tx_mailform_div_label_left_nowidth {
+	float:left;
+}
+
+.tx_mailform_div_output_select-check {
+	float:left;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*.tx_mailform_div_output_select_width {
+	float:left;
+	width:auto;
+	margin:4px 0px;
+}*/
+
+/*label generell, alle elemente*/
+.tx_mailform_div_label_left {
+	/*width:160px;
+	float:left;*/
+	margin:4px 0px 0px 0px;
+	padding:0px 3px 0px 0px;
+}
+
+/*inputfeld, textarea, weite kommt aus Formular*/
+div.tx_mailform_div_input textarea, div.tx_mailform_div_input select{
+	border:1px solid #A4A2A4;
+	background-color:#FFFFFF;
+	width: 85%;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+/*inputfeld, Feld für Bilderauswahl*/
+div.tx_mailform_div_input input.search_sa_file {
+	width: 85%;
+}
+
+/*senden Button, abschicken Button*/
+div.tx_mailform_div_input input.search_sa_button {
+	width: 95px;
+}
+
+/*senden Button, abschicken Button*/
+div.tx_mailform_div_input input.search_sa_button:hover {
+	background-color:#66A3C8;
+	color: #FFFFFF;
+}
+
+/*Pseudoclass IE7 -Firefox*/
+div.tx_mailform_div_input input:hover, div.tx_mailform_div_input textarea:hover, input.tx_mailform_captcha:hover, div.tx_mailform_div_input input:focus, div.tx_mailform_div_input textarea:focus, input.tx_mailform_captcha:focus{
+	background-color:#F4F4F4;
+}
+
+/*CAPTCHA-ELEMENT*/
+.tx-srfreecap-pi2-image{
+	margin:3px 10px 5px 0px;
+	border:1px solid #A4A2A4;
+	max-width:370px;
+}
+
+input.tx_mailform_captcha{
+	border:1px solid #A4A2A4;
+	width:167px; 
+	margin-top:3px;
+}
+
+div.tx_mailform_field_captcha tr td, div.tx_mailform_field_captcha tr td span.tx-srfreecap-pi2-cant-read{
+	font-size:11px;
+	line-height:20px;
+}
+
+.tx-srfreecap-pi2-cant-read {color:#00468C;}
+
+.tx-srfreecap-pi2-cant-read a:link {color:#AE0000;}
+
+.tx-srfreecap-pi2-cant-read a:hover{color:#7B8892;}
+
+div.tx_mailform_field_captcha .tx_mailform_label_global {}
+
+div.tx_mailform_field_captcha .tx_mailform_label_global, div.tx_mailform_field_captcha span.tx_mailform_required_star, div.tx_mailform_field_captcha  span.tx_mailform_required_star-error{float:left;}
+
+/*========================================================================
+	ALTES STANDARD FORMULAR
+========================================================================*/
+
+/**************************************************************************************************/
+/***************************EINZELNE FORMULARELEMENTE**********************************************/
+
+/* Ueberschriften der LABEL bei Radio Buttons*/	  
+legend {
+    padding-left:0px;
+    padding-right:0px;
+    margin:0px;
+    border:none;
+}
+
+/* Definition des Gesamtrahmens der Radio Buttons*/
+fieldset {
+    padding:0px;
+    border:none;
+}
+
+/* eigene Klasse fuer die Abstaende nach oben und unten
+bei der vwerwendung von Radio Buttons in Formularen */
+.radiolayout {
+	padding-left:0px;
+	padding-right:0px;
+	position: relative;
+	left:-5px;	
+}
+
+
+/*textfelder*/
+.csc-form-fieldcell .mf-text{  
+     font-family: Arial, Helvetica, sans-serif;       
+     margin:0px 0px 8px 0px;
+     border:1px solid #004387;
+	 width:200px; 
+	 height:100px;
+	 padding-left:4px;
+}
+
+/*sendebutton*/	   
+.csc-form-fieldcell .mf-submit, .tx-indexedsearch-searchbox-button, table.maincontent input.formbutton{                
+    width:auto;
+	height:20px;
+    border: 1px solid #7B8892;
+	font-size: 11px;
+	text-align: center;
+	vertical-align: top;
+	padding:0px 5px 2px 5px;
+	margin:8px 0 2px 0;
+	cursor:pointer; 
+}
+	   
+/*eingabefelder*/
+  .csc-form-fieldcell .mf-input, .tx-indexedsearch-searchbox-sword{                 
+    background-color: #FFFFFF;
+	height: 17px;
+	width:200px;
+    border:1px solid #A4A2A4;
+	padding-left:4px;
+}
+	   
+/*Markierungsfeld*/	   
+.csc-form-fieldcell .mf-check{
+    margin:0px 2px 0px 0px;              
+	text-align: left;
+	vertical-align: top;
+	width:15px;	
+}
+	   
+/* special classes for Formlements */
+.mf-radio {
+	border: none;
+    color:#666666;
+	margin-right:4px;
+}
+
+ /*Passwortfeld*/
+.csc-form-fieldcell .mf-pass {                     
+   width:175px;
+   border:1px solid #A4A2A4;
+   font-size: 100%;
+}
+
+.mf-check {
+   border: 0px;
+}
+
+ /*Auswahlfeld*/
+.csc-form-fieldcell .mf-select {                
+   border:0px;
+   border:1px solid #A4A2A4;
+   width:206px;
+   margin:2px 0px 0px 0px;
+   font-size: 95%;
+}
+
+/*Dateiupload*/
+.csc-form-fieldcell .mf-file {
+	width:200px;    
+   	border:1px solid #A4A2A4;                         
+	font-size: 95%;
+}
+
+/*Beschriftung - Zusatzvermerke, br`s*/
+.csc-mailform-label{
+    padding:2px 0px 2px 0px;
+	}
+	
+.mf-reset {
+	color: #666666;
+	font-size: 100%;
+}
+
+/*========================================================================
+	HTML FORMULARE ALT - SELFMADE
+========================================================================*/
+table.maincontent input{
+	border:1px solid #A4A2A4;
+	height:16px;
+}
+
+table.maincontent input.mf-check, table.maincontent input.mf-radio{border:none;}
+
+
+table.maincontent select, table.maincontent textarea{
+	border:1px solid #A4A2A4;
+}

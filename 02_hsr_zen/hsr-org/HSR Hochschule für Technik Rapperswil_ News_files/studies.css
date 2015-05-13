@@ -1,0 +1,179 @@
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		HSR Redesign 2008
+	date:			11/2008, claudia
+	version:		4.1
+	file:			studies.css blue
+	function:		different colors all studies
+********************************************************************************************************/
+body{
+  background:#CCDCE9;
+ background:#CCDCE9 url(/fileadmin/templates/hsr/html/img/layout/body-bg.gif) no-repeat bottom center;
+}
+
+h1 { background-color:#005092; /*display:block;*/ }
+
+div.actContainer{background-color:#CCDCE9;}
+
+div#peopleBox div.contentElement{ 
+	background-color:#CCDCE9;
+}
+
+
+div.actContainerblock, div.actOpen{background-color:#B2CADE;}
+
+* html div.actContainer, * html div.actContainerblock{ 
+	position: fixed; 
+}
+
+/* LISTENPUNKTE / BULLETS */
+
+#content ul li, #colRight ul li, #peopleBox ul li{
+	background-image: url(/fileadmin/templates/hsr/html/img/content/bulletBl.gif);		
+}
+
+* html #content ul li, * html #colRight ul li, * html #peopleBox ul li  {
+	background-color: #FFFFFF;
+	background-image: url(/fileadmin/templates/hsr/html/img/content/bulletBl.gif);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+}
+
+
+
+/**  ext: ics_crm tabellen  **/
+.tableBgTitle {
+	/*background-color: #005092;*/
+	background-color: #CCDCE9;
+}
+
+.tableBgNoOv {
+	background-color: #CCDCE9;
+}
+
+.tableBgNoCh {
+	background-color: #E9EFF4;
+}
+
+
+/*-------------  Formatierung Filelinks  ----------------------------*/
+/*Filelinks generell*/
+
+div.filelinks_layout_1 div.zip, div.filelinks_layout_2 div.zip, div.filelinks_layout_0 div.zip {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/zip_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.doc, div.filelinks_layout_2 div.doc {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/doc_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.docx, div.filelinks_layout_2 div.docx {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/doc_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.pdf, div.filelinks_layout_2 div.pdf {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/pdf_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.xls, div.filelinks_layout_2 div.xls {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/xls_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.xlsx, div.filelinks_layout_2 div.xlsx {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/xls_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.pps, div.filelinks_layout_1 div.ppt, div.filelinks_layout_2 div.pps, div.filelinks_layout_2 div.ppt{
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/ppt_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.pptx, div.filelinks_layout_2 div.pptx{
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/ppt_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.rtf, div.filelinks_layout_2 div.rtf {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/rtf_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.gif, div.filelinks_layout_2 div.gif {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/gif_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.jpg, div.filelinks_layout_2 div.jpg {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/jpg_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.eps, div.filelinks_layout_2 div.eps {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/eps_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.dot, div.filelinks_layout_2 div.dot {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/dot_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.dotx, div.filelinks_layout_2 div.dotx {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/dot_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.pot, div.filelinks_layout_2 div.pot {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/pot_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.potx, div.filelinks_layout_2 div.potx {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/pot_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.wmf, div.filelinks_layout_2 div.wmf, div.filelinks_layout_0 div.wmf {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/wmf_s.gif) no-repeat left top; padding-left:35px;}
+div.filelinks_layout_1 div.png, div.filelinks_layout_2 div.png {
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/png_s.gif) no-repeat left top; padding-left:35px;}
+
+/* filelinks mit thumbnails */
+
+div.filelinks_layout_2 div.zip,
+div.filelinks_layout_2 div.doc,
+div.filelinks_layout_2 div.docx,
+div.filelinks_layout_2 div.pdf,
+div.filelinks_layout_2 div.xls,
+div.filelinks_layout_2 div.xlsx,
+div.filelinks_layout_2 div.pps,
+div.filelinks_layout_2 div.ppt,
+div.filelinks_layout_2 div.pptx,
+div.filelinks_layout_2 div.rtf,
+div.filelinks_layout_2 div.gif ,
+div.filelinks_layout_2 div.jpg,
+div.filelinks_layout_2 div.eps,
+div.filelinks_layout_2 div.dot,
+div.filelinks_layout_2 div.dotx,
+div.filelinks_layout_2 div.pot,
+div.filelinks_layout_2 div.potx,
+div.filelinks_layout_2 div.wmf,
+div.filelinks_layout_2 div.png {
+
+    background-position: left bottom;
+
+}
+
+/*	
+div.filelinks_layout_2 .filelinkTitle  {
+  padding-left:35px;
+}
+*/	
+
+/*Filelinks colRight + colNormal mit HG Farbe*/
+#colRight div.actContainerblock div.filelinks_layout_1 div.zip, #colNormal div.actContainerblock div.filelinks_layout_1 div.zip, #peopleBox div.actContainerblock div.filelinks_layout_1 div.zip{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/zip_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.doc, #colNormal div.actContainerblock div.filelinks_layout_1 div.doc, #peopleBox div.actContainerblock div.filelinks_layout_1 div.doc{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/doc_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.docx, #colNormal div.actContainerblock div.filelinks_layout_1 div.docx, #peopleBox div.actContainerblock div.filelinks_layout_1 div.docx{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/doc_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.pdf, #colNormal div.actContainerblock div.filelinks_layout_1 div.pdf, #peopleBox div.actContainerblock div.filelinks_layout_1 div.pdf{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/pdf_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.xls, #colNormal div.actContainerblock div.filelinks_layout_1 div.xls, #peopleBox div.actContainerblock div.filelinks_layout_1 div.xls{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/xls_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.xlsx, #colNormal div.actContainerblock div.filelinks_layout_1 div.xlsx, #peopleBox div.actContainerblock div.filelinks_layout_1 div.xlsx{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/xls_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.pps, #colNormal div.actContainerblock div.filelinks_layout_1 div.pps, #peopleBox div.actContainerblock div.filelinks_layout_1 div.pps, #colRight div.actContainerblock div.filelinks_layout_1 div.ppt, #colNormal div.actContainerblock div.filelinks_layout_1 div.ppt, #peopleBox div.actContainerblock div.filelinks_layout_1 div.ppt{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/ppt_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.pptx, #colNormal div.actContainerblock div.filelinks_layout_1 div.pptx, #peopleBox div.actContainerblock div.filelinks_layout_1 div.pptx{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/ppt_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.rtf, #colNormal div.actContainerblock div.filelinks_layout_1 div.rtf, #peopleBox div.actContainerblock div.filelinks_layout_1 div.rtf{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/rtf_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.gif, #colNormal div.actContainerblock div.filelinks_layout_1 div.gif, #peopleBox div.actContainerblock div.filelinks_layout_1 div.gif{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/gif_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.jpg, #colNormal div.actContainerblock div.filelinks_layout_1 div.jpg, #peopleBox div.actContainerblock div.filelinks_layout_1 div.jpg{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/jpg_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.eps, #colNormal div.actContainerblock div.filelinks_layout_1 div.eps, #peopleBox div.actContainerblock div.filelinks_layout_1 div.eps{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/eps_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.dot, #colNormal div.actContainerblock div.filelinks_layout_1 div.dot, #peopleBox div.actContainerblock div.filelinks_layout_1 div.dot{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/dot_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.dotx, #colNormal div.actContainerblock div.filelinks_layout_1 div.dotx, #peopleBox div.actContainerblock div.filelinks_layout_1 div.dotx{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/dot_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.pot, #colNormal div.actContainerblock div.filelinks_layout_1 div.pot, #peopleBox div.actContainerblock div.filelinks_layout_1 div.pot{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/pot_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.potx, #colNormal div.actContainerblock div.filelinks_layout_1 div.potx, #peopleBox div.actContainerblock div.filelinks_layout_1 div.potx{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/pot_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.wmf, #colNormal div.actContainerblock div.filelinks_layout_1 div.wmf, #peopleBox div.actContainerblock div.filelinks_layout_1 div.wmf{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/wmf_hg_in.gif) no-repeat left top;}
+#colRight div.actContainerblock div.filelinks_layout_1 div.png, #colNormal div.actContainerblock div.filelinks_layout_1 div.png, #peopleBox div.actContainerblock div.filelinks_layout_1 div.png{
+	background: url(/fileadmin/templates/hsr/html/img/icons/intranet/png_hg_in.gif) no-repeat left top;}
+	
+
+/*audio*/
+div.filelinks_layout_1 div.mp3, div.filelinks_layout_1 div.wav, div.filelinks_layout_1 div.mid, div.filelinks_layout_1 div.wma{
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/sound_s.gif) no-repeat left top;
+}
+	
+	
+/*movie*/
+div.filelinks_layout_1 div.wmv, div.filelinks_layout_1 div.avi, div.filelinks_layout_1 div.asf, div.filelinks_layout_1 div.mpg{
+	background: url(/fileadmin/templates/hsr/html/img/icons/studies/movie_s.gif) no-repeat left top;
+}

@@ -1,0 +1,207 @@
+
+/* CSS Document */
+
+/* HomePreloader wird momentan nicht verwendet */
+body#HomePreloader{
+	background:#E9EFF4 url(/fileadmin/templates/hsr/html/img/layout/preloader.gif) center 300px no-repeat;
+}
+
+/*========================================================================
+	Background Home
+========================================================================*/
+
+div#backgroundContainerStart,div#backgroundContainer {
+	position:absolute;
+	top:0px; left:0px;
+	overflow:hidden;
+	z-index:1;
+}
+
+img#backgroundContainerIMG {
+	display:block;
+	width:0px; height:0px;
+	visibility:hidden;
+	z-index:1;	
+}
+
+/*========================================================================
+	Blue Box Home Start
+========================================================================*/
+
+div#blueBox {
+	position:absolute;
+	display:block;
+	bottom:95px; right:47px;
+	width:192px; height:185px;
+	z-index:3;
+}
+
+div.blueBoxContent {
+	position:absolute;
+	display:none;	
+	width:172px; height:155px;
+	margin-bottom:8px;
+	padding:10px;
+	color:#ffffff;
+	background-color:#005291;
+}
+div.blueBoxContent a {
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+	cursor: pointer;
+}
+
+div.blueBoxContent a:hover {
+	color:#C6C7C8;
+}
+
+div.blueBoxChoose,div.blueBoxChooseActive {
+	cursor:pointer;
+	display:block;
+	position:absolute;	
+	top:185px;
+	width:44px; height:12px;
+	background-color:#005291;
+}
+
+div.blueBoxChoose:hover,div.blueBoxChooseActive { 
+	background-color:#f68816; 
+}
+
+div#blueBox_infoText {
+	position:absolute;
+	top:184px;
+	left:0px;
+	color:#FFFFFF;
+	display:none;
+}
+
+/*========================================================================
+	Highlights/ Spotlights
+========================================================================*/
+
+div#containerHighlights {
+	position:absolute;
+	display:block;
+	top:197px; left:20px;
+	width:194px;
+	padding-bottom:0px;
+	z-index:3;	
+}
+
+div.highlightTitle {
+	background-color:#f8f8f8;
+	font-size:12px;
+	font-weight:bold;
+	padding:7px 5px;
+}
+
+body#HomeBody div#containerHighlights div#content {	
+	margin:0px;
+	height:auto;
+	padding:0px 0px 15px 0px;
+}
+div.AccordPix {
+	margin:0px;
+	overflow:hidden;
+}
+
+h3.toggler {
+	height:18px;
+	/*height:15px;*/
+	font-weight:normal;
+	margin:0px 0px 0px 7px;
+	/*padding:2px 0px;*/
+	overflow:hidden;
+	color:#616164;
+	cursor:pointer;
+	
+	line-height:18px;
+	font-size:11px;
+	padding-bottom:1px;
+}
+
+div.contentElement h3.toggler a{color:#616164; display:block;}
+
+h3.toggler {
+	background: url(/fileadmin/templates/hsr/html/img/navigation/titel_no.gif) no-repeat right 6px; 
+	color:#616164;
+	
+}
+h3.toggler.linkAct {
+	background: url(/fileadmin/templates/hsr/html/img/navigation/down1.gif) no-repeat right 6px; 
+	color:#616164;
+}
+
+h3.toggler.linkAct div.element {
+	height:90px !important;
+}
+
+h3.toggler a:hover{
+	color:#F75D00;
+	background: url(/fileadmin/templates/hsr/html/img/navigation/titel_ho.gif) no-repeat right 6px;
+	display:block;
+}
+
+
+.element {
+	position:relative;
+	margin:0px 0px 0px 7px;
+	padding-bottom: 0px;
+	overflow: hidden;
+	background:url(/fileadmin/templates/hsr/html/img/layout/hightlight_line.gif) no-repeat bottom right;
+}
+
+div#accordion p{
+	margin:0px;
+	padding:2px 0px 11px 0px;
+	font-size:10px;
+	line-height:12px;}
+	
+div#accordion .csc-textpic-image {
+	padding-bottom:3px;
+}
+
+div#colLeft {
+	overflow-x: hidden;
+}
+
+/*========================================================================
+	Specials
+========================================================================*/
+
+div#specials {
+    display: block;
+	height: 194px;
+	width: 194px;
+    left: 20px;
+    padding: 0px;
+	margin: 0px;
+    position: absolute;
+    top:470px;
+	/*background:url(/fileadmin/templates/hsr/html/img/button-startseite.png) no-repeat bottom right;*/
+	cursor: pointer;
+	z-index: 1;
+}
+
+a#special_container {
+    cursor:pointer;
+	display:block;
+	position:absolute;	
+	/*top:470px;
+	left: 20px;
+	width:197px; 
+	height:197px;*/
+	z-index: 3;
+}
+
+div.specialLink {
+	cursor:pointer;
+	display:block;
+	position:absolute;	
+	top:520px;
+	left: 15px;
+	width:197px; 
+	height:174px;
+}

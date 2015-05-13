@@ -1,0 +1,395 @@
+/********************************************************************************************************
+	created by:		ICSurselva AG	http://www.icsurselva.ch
+	project:		HSR Redesign
+	date:			10/2008, claudia
+	version:		4.1
+	file:			layout.css
+	function:		layout elements -style 
+********************************************************************************************************/
+body#thebody, body#HomeBody {
+	margin:0px; padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:15px;
+	color:#000000;
+	
+	/*background-color:#FFFFFF;*/
+	/* IE 6 und IE 7 haben verschiebeung um 1pixel im Layout margin:0px 0px 0px 1px;*/
+}
+
+
+/*========================================================================
+	Container
+========================================================================*/
+
+div.mainContainer {
+	position:relative;
+	margin:0px auto;
+	padding:0px;
+	width:959px;
+	/*text-align: center;  /* Zentrierung im Internet Explorer */
+}
+
+
+/*c #main_center {
+    color: black; 
+    margin: 0; padding: 1em 0;
+    text-align: center; 
+  }*/
+  
+/*c #main_shortcut {
+	font-size:0.8em; 
+	font-weight:normal;
+	height:1.7em;
+	margin:0pt auto;
+	padding:0pt;
+	text-align:right;
+	width:954px;
+  }*/
+   
+/*========================================================================
+	Background, Images
+========================================================================*/
+  
+div#bgContainer{
+	display:block;
+	width:959px; 
+	height:195px;
+	background:url(/fileadmin/templates/hsr/html/img/layout/dummy-headerImage.jpg) left top no-repeat;	
+} 
+
+/*========================================================================
+	Header
+========================================================================*/
+
+img#logo,div#service,div#language,div#search {
+	position:absolute;
+	display:block;
+	top:0px;
+	height:30px;
+	background-color:#f8f8f8;
+	z-index:3;
+}
+
+/*bg search, mh_ajasearch*/
+* html div#search {background: url(/fileadmin/templates/hsr/html/img/search/bg_ie6_search.gif) no-repeat top left;}
+
+img#logo {		
+	left:20px;	
+	height:69px;
+}
+
+div#service {
+	left:251px;
+	width:328px;
+	overflow:hidden;	
+}
+
+div#language {
+	left:589px;
+	width:67px;
+}
+
+div#search {
+/*	
+	left: 667px;
+    width: 157px;
+*/	
+	left: 671px;
+    width: 288px;	
+}
+#HomeBody div#search {
+	/*
+	left: 667px;
+    width: 157px;
+	*/
+	left: 671px;
+    width: 298px;		
+}
+
+
+/*========================================================================
+	Main Content
+========================================================================*/
+
+div#mainContent {
+	position:absolute;
+	top:195px; left:0px;
+	padding-left:20px;
+	width:939px;
+background-color:#FFFFFF;
+margin:0px;
+padding:0 0 0 20px;
+}
+
+
+  
+/*#mainContent {
+    margin: 0 auto;      
+    width: 954px;
+    padding: 0;
+  }*/
+ 
+
+/*c #main_header {
+	font-size:0.8em;
+	background-color: #FFFFFF;
+	display:block;
+}
+   * html #main_header {
+    margin-bottom: 0;
+	}*/
+	
+/*c #search {
+	float:left;
+	text-align: left; 
+	width:199px;
+	margin:3px 0 3px 7px;
+	background-color:#EFEFEF;
+} */
+
+#navigationTeaser {
+	position:relative;
+	width:760px; height:18px;
+	margin:0px; padding:0px;
+	color:#b3b4b5;
+}
+
+#navigationTeaser a{
+	color:#b3b4b5;
+}
+
+#navigationTeaser span.bread_activ a{ 
+	color:#F75D00;
+}
+/*========================================================================
+	Navigation Left (Subsection)
+========================================================================*/
+
+div#navigation {
+	display:block;
+	width:194px;
+}
+
+div#navigation,div#content,div#rightCol {
+	/*position:relative; auskommentiert am 23.11.2008, konflikt im IE6*/
+	float:left;	
+	/*margin:15px 0px 20px 0px; padding:0px;*/
+	padding:15px 0px 20px 0px; margin:0px;
+
+}
+
+div#navigation{
+border-top:1px solid #000000;}
+
+div#content{
+padding:0px;}
+
+
+
+
+div#content {	
+	background:white;
+	/*margin:0px 0px 20px 0px;*/
+	margin:0px;
+}
+
+/*========================================================================
+	Footer
+========================================================================*/
+
+#footer{
+	clear:both;
+	position:relative;
+	width:914px;
+	font-size:10px;
+	border-top:1px solid #B3B4B5;
+	
+	padding-top:2px;
+	line-height:12px;
+	height:28px;
+	/*J line-height:12px; ersatzlos entfernen*/
+}
+
+div.footerAddress {
+	float:left;
+	width:530px;
+}
+
+* html div.footerAddress {width:527px;}
+
+div.footerAddress p{
+	margin:0px;
+	padding:0px;}
+
+div.footerInfo {
+	float:left;
+	margin:12px 0px 0px 30px;
+	/*J margin:16px 0px 0px 30px;*/	
+}
+
+div.print {
+	margin:6px 0px 0px 20px;
+	
+	float:right;
+	/*J margin:12px 0px 0px 30px;*/	
+}
+
+div.print a {
+	color:#000000;
+	padding:0px 0px 0px 10px;
+}
+
+/*========================================================================
+	Search
+========================================================================*/
+/*div.tx-macinasearchbox-pi1{margin-left:10px;}*/
+
+div.searchBox {
+	float:left;
+	background:white;
+	border:1px solid #005291;
+	height:15px;
+	line-height:13px;
+	position:absolute;	
+	top:5px; left:10px; 
+	width:134px; 
+	height:15px;
+	margin:0px; 
+	padding:0px;
+}
+input.formfield_search{
+	border:1px solid red;
+	line-height:14px;
+	position:absolute;	
+	top:0px; left:17px; 
+	margin:0px; padding:0px;
+	width:116px; 
+	height:15px;
+	border:none;
+	border:hidden;
+	
+}
+.tx-indexedsearch-selectbox-type, .tx-indexedsearch-selectbox-defop,.tx-indexedsearch-selectbox-media {
+	border:1px solid #005291;
+	background-color:#005092;
+	color:#FFFFFF;
+	width:320px; 
+	height:25px;
+	margin:0 0 4px 0;
+}
+div.searchBox_result {
+	background-color:#CCDCE9;
+	border:1px solid #005291;
+	height:15px;
+	line-height:13px;
+	/*
+	float:left;
+	width:134px; 
+	*/
+	height:15px;
+	margin:0px; 
+	padding:0px;
+}
+
+.searchFor {
+	background-color:#CCDCE9;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	margin:0 0 1px;
+	padding:5px;
+}
+.searchBox_result_bg, .bgAdvSearch {
+	background-color:#CCDCE9;
+	padding:3px 10px 5px 10px;
+}
+
+input.formfield_search_result {
+	border:1px solid red;
+	line-height:14px;
+	margin:0px; 
+	padding:0px;
+	border:none;
+	border:hidden;
+	background-color:#CCDCE9;
+}
+.tx-indexedsearch-browsebox p {
+	border-top:1px solid #B3B4B5;
+	border-bottom:1px solid #B3B4B5;
+	padding:2px!important;
+}
+ul.browsebox {
+	float:right;
+	padding:0!important;
+	margin:-19px 0 0 3px!important;
+}
+
+div.tx-indexedsearch-res+div.tx-indexedsearch-browsebox {
+	margin:20px 0 40px 3px!important;
+	/*padding:15px;*/
+	border:none;
+	border-bottom:1px solid #B3B4B5;
+}
+
+ul.browsebox li{
+	text-align:right;
+	background-image:none !important;
+	display:inline;
+	float:left;
+	margin:0!important;
+	padding:0 4px 0 0 !important;
+}
+
+td.tx-indexedsearch-info {
+color:#B3B4B5;
+
+}
+table.tx-indexedsearch-res {
+	border-bottom:1px solid #B3B4B5;
+	padding-bottom:5px;
+	margin-top:4px;	
+}
+* html table.tx-indexedsearch-res {
+
+	margin-bottom:0px;
+}
+
+
+/***/	
+form#searchform .radio {
+	display:inline;
+}
+div.serachBox_radios {
+	position:absolute;
+	right:0;
+	top:6px;
+	width:142px;
+}
+div.frm_radio input {
+	display:none;
+}
+div.frm_radio label {
+	cursor:pointer;
+	display:block;
+	float:left;
+	padding:0px 5px 0px 0px;
+}	
+div.frm_radio img {
+	display:block;
+	float:left;
+	margin:0px 3px 0px 0px;
+}
+
+
+div.tx-t3scontent-pi1 div.ui-corner-all {
+	padding: 0!important;
+}
+
+iframe {
+	margin: 0 0 5px 0;
+}
+
+#peopleBox .csc-menu-4 {
+	padding:5px 5px 5px 5px;
+}
