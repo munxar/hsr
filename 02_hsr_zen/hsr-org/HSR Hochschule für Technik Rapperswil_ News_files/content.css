@@ -63,7 +63,8 @@ p.bodytext {
 
 #colRight ul li, #peopleBox ul li {background-position:left 6px;}
 
-* html #content #colLeft ul li{background-position:left 6px;}
+* html #content #colLeft ul li{
+    background-position:left 6px;}
 
 /*agentur???*/
 /** html #content ul li {

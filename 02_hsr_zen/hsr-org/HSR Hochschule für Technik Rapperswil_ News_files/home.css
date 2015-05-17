@@ -122,7 +122,10 @@ h3.toggler {
 	padding-bottom:1px;
 }
 
-div.contentElement h3.toggler a{color:#616164; display:block;}
+div.contentElement h3.toggler a{
+    color:#616164;
+    display:block;
+}
 
 h3.toggler {
 	background: url(/fileadmin/templates/hsr/html/img/navigation/titel_no.gif) no-repeat right 6px; 
